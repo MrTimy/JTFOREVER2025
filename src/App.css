@@ -11,6 +11,6 @@
   --font-cairo: "Cairo", sans-serif;
   --font-lovers-quarrel: "Lovers Quarrel", cursive;
 
-  --spacing: 1440px;
-  --mobile-spacing: 90%;
+  --spacing-web-max: 1440px;
+  --spacing-mobile-max: 90%;
 }
