@@ -47,6 +47,13 @@ export default function Page() {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      {/* Coming soon & love story */}
+      <div>
+        <div className="grid place-items-center">
+          <h3>Comming soon!!!</h3>
+        </div>
+      </div>
     </div>
   );
 }
