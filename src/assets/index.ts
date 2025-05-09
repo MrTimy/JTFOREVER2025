@@ -1,3 +1,11 @@
 export { default as Weddingpicone } from "./images/hero_one.png";
 export { default as Weddingpictwo } from "./images/hero_two.png";
 export { default as Weddingpicthree } from "./images/hero_three.png";
+export { default as MiniFlower } from "./svgs/mini_flower.svg";
+export { default as StoryFlowerOne } from "./svgs/story_flower_one.svg";
+export { default as StoryFlowerTwo } from "./svgs/story_flower_two.svg";
+export { default as Rule } from "./svgs/rule.svg";
+export { default as FirstMeet } from "./images/firstmeet.png";
+export { default as FirstDate } from "./images/firstdate.png";
+export { default as MarriageProposal } from "./images/marriageproposal.png";
+export { default as Engagement } from "./images/engagement.png";
