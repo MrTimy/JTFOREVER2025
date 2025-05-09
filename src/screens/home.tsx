@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Weddingpicone, Weddingpictwo, Weddingpicthree } from "../assets";
-import { WeddingAnnouncement } from "../components";
+import { CountdownTimer, WeddingAnnouncement } from "../components";
 
 export default function Page() {
   return (
@@ -49,9 +49,13 @@ export default function Page() {
       </Swiper>
 
       {/* Coming soon & love story */}
-      <div>
-        <div className="grid place-items-center">
-          <h3>Comming soon!!!</h3>
+      <div className="grid gap-9 py-20 ">
+        <div className="grid place-items-center mx-auto w-full gap-8">
+          <h3 className="font-cairo text-3xl font-normal uppercase">
+            Coming soon!!!
+          </h3>
+          <div className="h-0.5 w-1/4 bg-primary" />
+          <CountdownTimer />
         </div>
       </div>
     </div>
