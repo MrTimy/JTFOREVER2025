@@ -8,10 +8,11 @@ import {
   GUEST_GALLERY,
 } from "./routes";
 import { Home } from "./screens";
+import Layout from "./_layout";
 
 function App() {
   return (
-    <div className="bg-beige min-h-screen">
+    <Layout>
       <Routes>
         <Route path={HOME} element={<Home />} />
         <Route
@@ -31,7 +32,7 @@ function App() {
           element={<div className="text-3xl font-bold underline">Contact</div>}
         />
       </Routes>
-    </div>
+    </Layout>
   );
 }
 
