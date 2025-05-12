@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Route, Routes } from "react-router";
+import {
+  HOME,
+  RSVP,
+  ORDER_OF_EVENTS,
+  PROGRAMME,
+  GUEST_GALLERY,
+} from "./routes";
+import { Home } from "./screens";
+import Layout from "./_layout";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Layout>
+      <Routes>
+        <Route path={HOME} element={<Home />} />
+        <Route
+          path={RSVP}
+          element={<div className="text-3xl font-bold underline">About</div>}
+        />
+        <Route
+          path={ORDER_OF_EVENTS}
+          element={<div className="text-3xl font-bold underline">Contact</div>}
+        />
+        <Route
+          path={PROGRAMME}
+          element={<div className="text-3xl font-bold underline">Contact</div>}
+        />
+        <Route
+          path={GUEST_GALLERY}
+          element={<div className="text-3xl font-bold underline">Contact</div>}
+        />
+      </Routes>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
