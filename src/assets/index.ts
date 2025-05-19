@@ -21,6 +21,8 @@ export { default as WeddingImage9 } from "./images/c2dd0528b1429231cd6d80393721f
 
 export { default as WeddingImage10 } from "./images/617c22e1e435c996268e2d35f4f639ddbc7b3a0b.png";
 export { default as WeddingImage11 } from "./images/Frame 427318227.png";
+
+export { default as WeddingImage13 } from "./images/wedding13.png";
 export { default as LeftFlower } from "./svgs/left_flower.svg";
 export { default as RightFlower } from "./svgs/right_flower.svg";
 
