@@ -21,3 +21,15 @@ export const EventDetails = [
     wear: "Polo and Shorts",
   },
 ];
+
+export const bridesMaid = [
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+];
+
+export const groomsMen = [
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+  "We met back in our school days, and somehow, the bond only grew stronger with time. From classroom jokes to life’s big moments, he’s been there through it all—and I couldn’t imagine this day without her",
+];

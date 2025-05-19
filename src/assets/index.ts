@@ -21,3 +21,15 @@ export { default as WeddingImage9 } from "./images/c2dd0528b1429231cd6d80393721f
 
 export { default as WeddingImage10 } from "./images/617c22e1e435c996268e2d35f4f639ddbc7b3a0b.png";
 export { default as WeddingImage11 } from "./images/Frame 427318227.png";
+export { default as LeftFlower } from "./svgs/left_flower.svg";
+export { default as RightFlower } from "./svgs/right_flower.svg";
+
+export { default as BridesMaid1 } from "./images/maid1.png";
+export { default as BridesMaid2 } from "./images/maid2.png";
+export { default as BridesMaid3 } from "./images/maid3.png";
+
+export { default as Groom1 } from "./images/groom1.png";
+export { default as Groom2 } from "./images/groom2.png";
+export { default as Groom3 } from "./images/groom3.png";
+
+export { default as BowlTie } from "./svgs/bowltie.svg";

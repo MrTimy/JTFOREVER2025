@@ -23,9 +23,18 @@ import {
   WeddingImage9,
   WeddingImage10,
   WeddingImage11,
+  LeftFlower,
+  RightFlower,
+  BridesMaid1,
+  BridesMaid2,
+  BridesMaid3,
+  Groom1,
+  Groom2,
+  Groom3,
+  BowlTie,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
-import { EventDetails } from "../constants/constant";
+import { bridesMaid, EventDetails, groomsMen } from "../constants/constant";
 import Button from "../components/button";
 
 const loveStory: {
@@ -70,6 +79,8 @@ const loveStory: {
 ];
 
 export default function Page() {
+  const bridesMaidImg = [BridesMaid1, BridesMaid2, BridesMaid3];
+  const groomsMenImg = [Groom1, Groom2, Groom3];
   return (
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="h-[600px]">
@@ -115,7 +126,7 @@ export default function Page() {
       </Swiper>
 
       {/* Coming soon & love story */}
-      <div className="grid gap-9 py-20">
+      <div className="grid py-20">
         <div className="grid place-items-center mx-auto w-full gap-8">
           <h3 className="font-cairo text-3xl font-normal uppercase">
             Coming soon!!!
@@ -324,7 +335,7 @@ export default function Page() {
 
         {/* RSVP */}
         <div
-          className="grid place-items-center h-[644px] pt-20"
+          className="grid place-items-center h-[644px] mt-20"
           style={{
             background: `url(${WeddingImage11})`,
             backgroundSize: "cover",
@@ -344,6 +355,102 @@ export default function Page() {
               variants={"secondary"}
               className="w-[165px] mx-auto mt-12"
             />
+          </div>
+        </div>
+
+        {/* BridesMaid & Groomsmen */}
+        <div className="bg-white py-8">
+          <div className="mx-auto max-w-web-max w-mobile-max">
+            {/* Bridesmaid */}
+            <div className="flex items-center justify-center font-lovers-quarrel text-5xl md:text-7xl pt-5 font-normal">
+              <img src={LeftFlower} alt="" />
+              Bridesmaids
+              <img src={RightFlower} alt="" />
+            </div>
+
+            <div className="grid gap-5 mt-6">
+              <div className="flex gap-8 justify-center flex-col md:flex-row">
+                {bridesMaid.slice(0, 2).map((bmaid, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5 max-w-[564px]"
+                  >
+                    <img
+                      src={bridesMaidImg[idx]}
+                      alt=""
+                      className="h-[240xp] w-[240px]"
+                    />
+                    <div />
+                    <p className="text-primary font-cairo font-normal text-xl">
+                      {bmaid}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="max-w-[564px] mx-auto">
+                {bridesMaid.slice(2).map((bmaid, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5.5"
+                  >
+                    <img
+                      src={bridesMaidImg[idx + 2]}
+                      alt=""
+                      className="h-[240xp] w-[240px]"
+                    />
+                    <div className="max-h-[300px] w-1 bg-burnt-orange" />
+                    <p className="text-primary font-cairo font-normal text-xl">
+                      {bmaid}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Groomsmen  */}
+
+            <div className="flex items-center justify-center font-lovers-quarrel text-5xl md:text-7xl mt-12 font-normal">
+              Groomsmen
+              <img src={BowlTie} alt="" />
+            </div>
+
+            <div className="grid gap-5 mt-6">
+              <div className="max-w-[564px] mx-auto">
+                {groomsMen.slice(2).map((groom, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5.5"
+                  >
+                    <img
+                      src={groomsMenImg[idx + 2]}
+                      alt=""
+                      className="h-[240xp] w-[240px]"
+                    />
+                    <div className="max-h-[300px] w-1 bg-burnt-orange" />
+                    <p className="text-primary font-cairo font-normal text-xl">
+                      {groom}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-8 justify-center flex-col md:flex-row">
+                {groomsMen.slice(0, 2).map((groom, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5 max-w-[564px]"
+                  >
+                    <img
+                      src={groomsMenImg[idx]}
+                      alt=""
+                      className="h-[240xp] w-[240px]"
+                    />
+                    <div />
+                    <p className="text-primary font-cairo font-normal text-xl">
+                      {groom}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
