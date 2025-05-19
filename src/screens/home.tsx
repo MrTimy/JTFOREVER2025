@@ -32,6 +32,7 @@ import {
   Groom2,
   Groom3,
   BowlTie,
+  WeddingImage13,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
 import { bridesMaid, EventDetails, groomsMen } from "../constants/constant";
@@ -451,6 +452,41 @@ export default function Page() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Order of Events */}
+        <div
+          className="grid place-items-center gap-16 min-h-[742px] py-28 pt-20"
+          style={{
+            background: `url(${WeddingImage13})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="grid gap-5 text-center">
+            <h1 className="font-lovers-quarrel font-light text-white text-7xl">
+              Order of Photography
+            </h1>
+            <p className="text-2xl font-cairo font-medium text-white">
+              Be our guest on the Red Carpet
+            </p>
+            <Button
+              text="View"
+              variants={"secondary"}
+              className="w-[135px] mx-auto"
+            />
+          </div>
+          <div className="grid gap-5 text-center">
+            <h1 className="font-lovers-quarrel font-light text-white text-7xl">
+              Programme of Event
+            </h1>
+            <Button
+              text="View"
+              variants={"secondary"}
+              className="w-[135px] mx-auto"
+            />
           </div>
         </div>
       </div>
