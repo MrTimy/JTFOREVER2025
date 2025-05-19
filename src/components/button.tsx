@@ -29,7 +29,11 @@ export default function Button({
     <button
       onClick={onClick}
       className={`flex items-center justify-center font-cairo text-lg font-normal text-shadow-white gap-2 rounded-md py-2.5 px-7.5 cursor-pointer ${className} ${
-        variants === "primary" ? "bg-chocolate-brown text-white" : ""
+        variants === "primary"
+          ? "bg-chocolate-brown text-white"
+          : variants === "secondary"
+          ? "bg-beige text-chocolate-brown"
+          : "bg-beige text-chocolate-brown"
       } ${size} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
       type={type}
       disabled={disabled}

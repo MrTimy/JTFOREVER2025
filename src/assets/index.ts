@@ -18,3 +18,6 @@ export { default as WeddingImage6 } from "./images/7aea8ce6638723fa17ddf32060247
 export { default as WeddingImage7 } from "./images/9dc1b6ebb8aa99aa2e05ecd4ca8e45ec9e476b2d.png";
 export { default as WeddingImage8 } from "./images/bd5c98e9ee13c5fb52d6b56c61b0e8fa6f465958.png";
 export { default as WeddingImage9 } from "./images/c2dd0528b1429231cd6d80393721ff140b1b3201.png";
+
+export { default as WeddingImage10 } from "./images/617c22e1e435c996268e2d35f4f639ddbc7b3a0b.png";
+export { default as WeddingImage11 } from "./images/Frame 427318227.png";

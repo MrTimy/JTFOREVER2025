@@ -21,8 +21,12 @@ import {
   WeddingImage7,
   WeddingImage8,
   WeddingImage9,
+  WeddingImage10,
+  WeddingImage11,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
+import { EventDetails } from "../constants/constant";
+import Button from "../components/button";
 
 const loveStory: {
   title: string;
@@ -111,7 +115,7 @@ export default function Page() {
       </Swiper>
 
       {/* Coming soon & love story */}
-      <div className="grid gap-9 py-20 ">
+      <div className="grid gap-9 py-20">
         <div className="grid place-items-center mx-auto w-full gap-8">
           <h3 className="font-cairo text-3xl font-normal uppercase">
             Coming soon!!!
@@ -281,10 +285,66 @@ export default function Page() {
         </div>
 
         {/* Event Details */}
-        <div className="mx-auto pt-32">
+        <div className="mx-auto pt-32 grid gap-10  max-w-web-max w-mobile-max">
           <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
             Event Details
           </h1>
+          <div className="grid md:grid-cols-3 gap-5">
+            {EventDetails.map(({ title, desc, date, venue, wear }, idx) => (
+              <div
+                className="border border-burnt-orange p-3 grid gap-8"
+                key={idx}
+              >
+                <img src={WeddingImage10} alt="" />
+                <h1 className="text-6xl font-lovers-quarrel">{title}</h1>
+                <p className="text-xl font-normal font-cairo text-primary">
+                  {desc}
+                </p>
+                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                  {date}
+                </p>
+                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                  {venue}
+                </p>
+                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                  {wear}
+                </p>
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-burnt-orange w-full text-white p-2.5 h-14 flex items-center justify-center font-cairo font-semibold rounded-lg"
+                >
+                  MAPS.GOOGLE.COM
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RSVP */}
+        <div
+          className="grid place-items-center h-[644px] pt-20"
+          style={{
+            background: `url(${WeddingImage11})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="grid gap-5 text-center">
+            <h1 className="font-lovers-quarrel font-light text-white text-7xl">
+              We can’t wait to see you!
+            </h1>
+            <p className="text-2xl font-cairo font-medium text-white">
+              Please tell us if you will be able to come
+            </p>
+            <Button
+              text="RSVP"
+              variants={"secondary"}
+              className="w-[165px] mx-auto mt-12"
+            />
+          </div>
         </div>
       </div>
     </div>
