@@ -35,3 +35,6 @@ export { default as Groom2 } from "./images/groom2.png";
 export { default as Groom3 } from "./images/groom3.png";
 
 export { default as BowlTie } from "./svgs/bowltie.svg";
+export { default as Gradient } from "./images/Frame 427318263.png";
+
+export { default as GroupGallery } from "./images/groupgallery.png";

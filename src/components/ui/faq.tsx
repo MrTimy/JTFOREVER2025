@@ -41,7 +41,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pt-10 bg-white">
+    <div className="min-h-screen flex flex-col items-center justify-start pt-10 bg-white px-4">
       <h1 className="text-4xl font-bold font-cairo mb-10">FAQs</h1>
       <div className="w-full max-w-2xl">
         {faqs.map((faq, idx) => (

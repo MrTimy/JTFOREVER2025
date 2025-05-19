@@ -38,6 +38,7 @@ import { CountdownTimer, WeddingAnnouncement } from "../components";
 import { bridesMaid, EventDetails, groomsMen } from "../constants/constant";
 import Button from "../components/button";
 import FAQ from "../components/ui/faq";
+import CurvedGallery from "../components/ui/curvedgallery";
 
 const loveStory: {
   title: string;
@@ -509,6 +510,7 @@ export default function Page() {
         </div>
 
         {/* Guests Gallery */}
+        <CurvedGallery />
 
         {/* FAQ */}
         <FAQ />

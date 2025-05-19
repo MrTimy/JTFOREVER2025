@@ -14,3 +14,10 @@
   --spacing-web-max: 1440px;
   --spacing-mobile-max: 90%;
 }
+
+.bg-cream {
+  background-color: #f6ecd7;
+}
+.text-cream {
+  color: #f6ecd7;
+}
