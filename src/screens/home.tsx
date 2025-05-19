@@ -12,6 +12,15 @@ import {
   Engagement,
   StoryFlowerOne,
   StoryFlowerTwo,
+  WeddingImage1,
+  WeddingImage2,
+  WeddingImage3,
+  WeddingImage4,
+  WeddingImage5,
+  WeddingImage6,
+  WeddingImage7,
+  WeddingImage8,
+  WeddingImage9,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
 
@@ -187,6 +196,95 @@ export default function Page() {
               className="absolute -right-0 bottom-[200]"
             />
           </div>
+        </div>
+
+        {/* Gallery */}
+        <div className="mx-auto pt-32 grid gap-10">
+          {" "}
+          <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
+            Our Gallery
+          </h1>
+          <div className="mx-auto grid max-w-[1200px] bg-white p-2">
+            <div className="grid grid-cols-12 gap-2">
+              {/* Top row */}
+              <div className="col-span-4">
+                <img
+                  src={WeddingImage1}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="col-span-5">
+                <img
+                  src={WeddingImage2}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="col-span-3">
+                <img
+                  src={WeddingImage3}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Middle row */}
+              <div className="col-span-4 row-span-2">
+                <img
+                  src={WeddingImage4}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="col-span-3">
+                <img
+                  src={WeddingImage5}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="col-span-5 row-span-2">
+                <img
+                  src={WeddingImage6}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Lower middle */}
+              <div className="col-span-3 row-span-2">
+                <img
+                  src={WeddingImage7}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Bottom row */}
+              <div className="col-span-4">
+                <img
+                  src={WeddingImage8}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="col-span-5">
+                <img
+                  src={WeddingImage9}
+                  alt="wedding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Event Details */}
+        <div className="mx-auto pt-32">
+          <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
+            Event Details
+          </h1>
         </div>
       </div>
     </div>
