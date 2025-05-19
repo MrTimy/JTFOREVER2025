@@ -37,6 +37,7 @@ import {
 import { CountdownTimer, WeddingAnnouncement } from "../components";
 import { bridesMaid, EventDetails, groomsMen } from "../constants/constant";
 import Button from "../components/button";
+import FAQ from "../components/ui/faq";
 
 const loveStory: {
   title: string;
@@ -489,6 +490,28 @@ export default function Page() {
             />
           </div>
         </div>
+
+        {/* We're getting Married */}
+        <div className="bg-beige flex justify-center flex-col items-center gap-9.5 min-h-[500px] py-28">
+          <h1 className="font-lovers-quarrel text-5xl md:text-7xl font-normal">
+            We’re Getting Married
+          </h1>
+          <p className="text-primary font-cairo text-2xl max-w-[621px] text-center">
+            Your presence at our wedding is the greatest gift of all, but if
+            you’d like to help us start our new chapter with some gifts, use the
+            link below.
+          </p>
+          <Button
+            text="AMAZON.COM"
+            variants={"primary"}
+            className="w-[258px] h-14"
+          />
+        </div>
+
+        {/* Guests Gallery */}
+
+        {/* FAQ */}
+        <FAQ />
       </div>
     </div>
   );
