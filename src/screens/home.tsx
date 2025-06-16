@@ -36,7 +36,7 @@ import CurvedGallery from "../components/ui/curvedgallery";
 import SquadCard from "../components/squad-card";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-import { ORDEROFPHOTOGRAPH } from "../routes";
+import { ORDER_OF_EVENTS, ORDEROFPHOTOGRAPH } from "../routes";
 
 const loveStory: {
   title: string;
@@ -423,11 +423,13 @@ export default function Page() {
             <h1 className="font-lovers-quarrel font-light text-white text-7xl">
               Programme of Event
             </h1>
-            <Button
-              text="View"
-              variants={"secondary"}
-              className="w-[135px] mx-auto"
-            />
+            <Link to={ORDER_OF_EVENTS}>
+              <Button
+                text="View"
+                variants={"secondary"}
+                className="w-[135px] mx-auto"
+              />
+            </Link>
           </div>
         </div>
 

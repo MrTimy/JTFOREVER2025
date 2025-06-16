@@ -9,7 +9,7 @@ import {
   SQAUD,
   ORDEROFPHOTOGRAPH,
 } from "./routes";
-import { Home, OrderOfPhotograph, Sqaud } from "./screens";
+import { Home, OrderofEvents, OrderOfPhotograph, Sqaud } from "./screens";
 import Layout from "./_layout";
 
 function App() {
@@ -19,10 +19,7 @@ function App() {
         <Route path={HOME} element={<Home />} />
         <Route path={SQAUD} element={<Sqaud />} />
         <Route path={ORDEROFPHOTOGRAPH} element={<OrderOfPhotograph />} />
-        <Route
-          path={ORDER_OF_EVENTS}
-          element={<div className="text-3xl font-bold underline">Contact</div>}
-        />
+        <Route path={ORDER_OF_EVENTS} element={<OrderofEvents />} />
         <Route
           path={PROGRAMME}
           element={<div className="text-3xl font-bold underline">Contact</div>}

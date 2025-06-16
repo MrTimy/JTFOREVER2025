@@ -45,3 +45,6 @@ export { default as Sample } from "./images/sample.png";
 export { default as OrderOfPhotoBackground } from "./images/orderofphotobg.png";
 export { default as OrderOfPhotoBox } from "./images/orderofphotos.png";
 export { default as CutePictures } from "./images/Cute couple posing together.png";
+
+export { default as ReceptionBackground } from "./images/reception.png";
+export { default as ReceptionGeneralBackground } from "./images/receptiongeneral.png";
