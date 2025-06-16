@@ -41,3 +41,7 @@ export { default as GroupGallery } from "./images/groupgallery.png";
 export { default as BridesmaidIcon } from "./svgs/female.svg";
 export { default as GroomIcon } from "./svgs/male.svg";
 export { default as Sample } from "./images/sample.png";
+
+export { default as OrderOfPhotoBackground } from "./images/orderofphotobg.png";
+export { default as OrderOfPhotoBox } from "./images/orderofphotos.png";
+export { default as CutePictures } from "./images/Cute couple posing together.png";
