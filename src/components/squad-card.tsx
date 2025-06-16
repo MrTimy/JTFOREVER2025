@@ -14,7 +14,7 @@ export default function SquadCard({
   gender,
 }: SquadCardProps) {
   return (
-    <div className="h-[409px] max-w-[291px] bg-white p-4 border border-[#ACACAC] rounded-t-[400px] rounded-b-3xl grid gap-2">
+    <div className="md:h-[409px] max-w-[291px] bg-white p-4 border border-[#ACACAC] rounded-t-[400px] rounded-b-3xl grid gap-2">
       <img src={image} alt={name} className="w-full h-[284px]" />
       <div className="flex items-center gap-2">
         {gender === "male" ? (

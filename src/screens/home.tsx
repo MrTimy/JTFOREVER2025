@@ -25,14 +25,11 @@ import {
   WeddingImage11,
   LeftFlower,
   RightFlower,
-  BridesMaid1,
-  BridesMaid2,
-  BridesMaid3,
   WeddingImage13,
   Sample,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
-import { bridesMaid, EventDetails } from "../constants/constant";
+import { EventDetails } from "../constants/constant";
 import Button from "../components/button";
 import FAQ from "../components/ui/faq";
 import CurvedGallery from "../components/ui/curvedgallery";
@@ -82,7 +79,6 @@ const loveStory: {
 ];
 
 export default function Page() {
-  const bridesMaidImg = [BridesMaid1, BridesMaid2, BridesMaid3];
   return (
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="h-[600px]">
