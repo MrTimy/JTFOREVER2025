@@ -8,13 +8,13 @@ export default function Navigation() {
 
   const links: { name: string; path: string }[] = [
     { name: "Home", path: "/" },
-    { name: "Our Love Story", path: "/" },
-    { name: "Gallery", path: "/" },
-    { name: "Event Details", path: "/" },
-    { name: "RSVP", path: "/" },
-    { name: "Bridal Party", path: "/" },
-    { name: "Gift Registry", path: "/" },
-    { name: "Guest Gallery", path: "/" },
+    { name: "Our Love Story", path: "#our-love-story" },
+    { name: "Gallery", path: "#our-gallery" },
+    { name: "Event Details", path: "/order-of-events" },
+    { name: "RSVP", path: "/rsvp" },
+    { name: "Bridal Party", path: "/squad" },
+    { name: "Gift Registry", path: "/gift-registry" },
+    { name: "Guest Gallery", path: "/guest-gallery" },
   ];
 
   const toggleMenu = () => {

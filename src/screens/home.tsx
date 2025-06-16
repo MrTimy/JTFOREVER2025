@@ -135,7 +135,7 @@ export default function Page() {
         </div>
 
         {/* Love story */}
-        <div className="mt-16 grid gap-6">
+        <div className="mt-16 grid gap-6" id="our-love-story">
           <div className="flex justify-center items-center gap-2 lg:gap-3 font-lovers-quarrel font-light text-6xl lg:text-7xl">
             Our <img src={MiniFlower} alt="MiniFlower" /> Love{" "}
             <img src={MiniFlower} alt="MiniFlower" /> Story
@@ -213,7 +213,7 @@ export default function Page() {
         </div>
 
         {/* Gallery */}
-        <div className="mx-auto pt-32 grid gap-10">
+        <div className="mx-auto pt-32 grid gap-10" id="our-gallery">
           {" "}
           <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
             Our Gallery

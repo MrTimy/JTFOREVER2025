@@ -11,7 +11,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-beige min-h-screen">
       {dontShowNavigation ? "" : <Navigation />}
-
       {children}
       {dontShowNavigation ? "" : <Footer />}
     </div>
