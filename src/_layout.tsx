@@ -3,12 +3,15 @@ import { useLocation } from "react-router";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation()?.pathname;
-  console.log(location);
+
+  const dontShowNavigation =
+    location === "/order-of-photograph" || location === "/order-of-events";
   return (
     <div className="bg-beige min-h-screen">
-      {location !== "/order-of-photograph" && <Navigation />}
+      {dontShowNavigation ? "" : <Navigation />}
+
       {children}
-      {location !== "/order-of-photograph" && <Footer />}
+      {dontShowNavigation ? "" : <Footer />}
     </div>
   );
 }

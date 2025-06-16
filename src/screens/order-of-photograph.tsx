@@ -4,7 +4,7 @@ import {
   OrderOfPhotoBox,
 } from "../assets";
 import Button from "../components/button";
-export default function OrderOfPhotograph() {
+export default function Page() {
   return (
     <div
       className="min-h-screen grid place-items-center md:p-10"
@@ -28,7 +28,7 @@ export default function OrderOfPhotograph() {
           <p>Time &</p>
           <p>Jayy</p>
         </div>
-        <div className="flex items-center justify-betwee flex-col md:flex-row">
+        <div className="flex items-center justify-between flex-col md:flex-row">
           <div className="grid gap-8 font-cairo">
             <div>
               <h3 className="text-[#272A2F] font-cairo text-5xl font-bold underline mb-4">
