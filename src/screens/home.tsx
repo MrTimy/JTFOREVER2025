@@ -28,17 +28,17 @@ import {
   BridesMaid1,
   BridesMaid2,
   BridesMaid3,
-  Groom1,
-  Groom2,
-  Groom3,
-  BowlTie,
   WeddingImage13,
+  Sample,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
-import { bridesMaid, EventDetails, groomsMen } from "../constants/constant";
+import { bridesMaid, EventDetails } from "../constants/constant";
 import Button from "../components/button";
 import FAQ from "../components/ui/faq";
 import CurvedGallery from "../components/ui/curvedgallery";
+import SquadCard from "../components/squad-card";
+import { Link } from "react-router";
+import { ArrowRight } from "lucide-react";
 
 const loveStory: {
   title: string;
@@ -83,7 +83,6 @@ const loveStory: {
 
 export default function Page() {
   const bridesMaidImg = [BridesMaid1, BridesMaid2, BridesMaid3];
-  const groomsMenImg = [Groom1, Groom2, Groom3];
   return (
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="h-[600px]">
@@ -362,98 +361,39 @@ export default function Page() {
         </div>
 
         {/* BridesMaid & Groomsmen */}
-        <div className="bg-white py-8">
+        <div className="py-8">
           <div className="mx-auto max-w-web-max w-mobile-max">
-            {/* Bridesmaid */}
             <div className="flex items-center justify-center font-lovers-quarrel text-5xl md:text-7xl pt-5 font-normal">
               <img src={LeftFlower} alt="" />
-              Bridesmaids
+              The Squad
               <img src={RightFlower} alt="" />
             </div>
 
-            <div className="grid gap-5 mt-6">
-              <div className="flex gap-8 justify-center flex-col md:flex-row">
-                {bridesMaid.slice(0, 2).map((bmaid, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5 max-w-[564px]"
-                  >
-                    <img
-                      src={bridesMaidImg[idx]}
-                      alt=""
-                      className="h-[240xp] w-[240px]"
-                    />
-                    <div />
-                    <p className="text-primary font-cairo font-normal text-xl">
-                      {bmaid}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <div className="max-w-[564px] mx-auto">
-                {bridesMaid.slice(2).map((bmaid, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5.5"
-                  >
-                    <img
-                      src={bridesMaidImg[idx + 2]}
-                      alt=""
-                      className="h-[240xp] w-[240px]"
-                    />
-                    <div className="max-h-[300px] w-1 bg-burnt-orange" />
-                    <p className="text-primary font-cairo font-normal text-xl">
-                      {bmaid}
-                    </p>
-                  </div>
-                ))}
-              </div>
+            <div className="grid md:grid-cols-3 md:gap-20 gap-5 max-w-[1034px] place-items-center mx-auto mt-6">
+              <SquadCard
+                name="Cynthia James"
+                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+                gender="female"
+                image={Sample}
+              />
+              <SquadCard
+                name="Cynthia James"
+                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+                gender="female"
+                image={Sample}
+              />
+              <SquadCard
+                name="Cynthia James"
+                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+                gender="female"
+                image={Sample}
+              />
             </div>
-            {/* Groomsmen  */}
-
-            <div className="flex items-center justify-center font-lovers-quarrel text-5xl md:text-7xl mt-12 font-normal">
-              Groomsmen
-              <img src={BowlTie} alt="" />
-            </div>
-
-            <div className="grid gap-5 mt-6">
-              <div className="max-w-[564px] mx-auto">
-                {groomsMen.slice(2).map((groom, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5.5"
-                  >
-                    <img
-                      src={groomsMenImg[idx + 2]}
-                      alt=""
-                      className="h-[240xp] w-[240px]"
-                    />
-                    <div className="max-h-[300px] w-1 bg-burnt-orange" />
-                    <p className="text-primary font-cairo font-normal text-xl">
-                      {groom}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <div className="flex gap-8 justify-center flex-col md:flex-row">
-                {groomsMen.slice(0, 2).map((groom, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-burnt-orange p-5 flex flex-col md:flex-row items-center gap-5 max-w-[564px]"
-                  >
-                    <img
-                      src={groomsMenImg[idx]}
-                      alt=""
-                      className="h-[240xp] w-[240px]"
-                    />
-                    <div />
-                    <p className="text-primary font-cairo font-normal text-xl">
-                      {groom}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <Link to={"/squad"}>
+              <button className="w-[165px] items-center gap-1 p-[10px] min-h-12 mx-auto mt-12 bg-burnt-orange rounded-full text-white font-cairo flex justify-center cursor-pointer">
+                See more <ArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -495,15 +435,17 @@ export default function Page() {
         {/* We're getting Married */}
         <div className="bg-beige flex justify-center flex-col items-center gap-9.5 min-h-[500px] py-28">
           <h1 className="font-lovers-quarrel text-5xl md:text-7xl font-normal">
-            We’re Getting Married
+            Gifts
           </h1>
           <p className="text-primary font-cairo text-2xl max-w-[621px] text-center">
-            Your presence at our wedding is the greatest gift of all, but if
-            you’d like to help us start our new chapter with some gifts, use the
-            link below.
+            "We're so excited to celebrate our wedding day with you! Your
+            presence is truly the greatest gift we could ask for. We would be
+            incredibly grateful if you wish to honour us with a gift. More than
+            anything, we can't wait to share this special moment with you. Check
+            out our Gift Registry
           </p>
           <Button
-            text="AMAZON.COM"
+            text="OUR WISHLIST"
             variants={"primary"}
             className="w-[258px] h-14"
           />
