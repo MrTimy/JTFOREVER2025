@@ -3,13 +3,14 @@ import { Route, Routes } from "react-router";
 import {
   HOME,
   ORDER_OF_EVENTS,
-  PROGRAMME,
   GUEST_GALLERY,
   SQAUD,
   ORDEROFPHOTOGRAPH,
+  GIFT_REGISTRY,
 } from "./routes";
 import {
   Gallery,
+  GiftRegistry,
   Home,
   OrderofEvents,
   OrderOfPhotograph,
@@ -26,10 +27,7 @@ function App() {
         <Route path={ORDEROFPHOTOGRAPH} element={<OrderOfPhotograph />} />
         <Route path={ORDER_OF_EVENTS} element={<OrderofEvents />} />
         <Route path={GUEST_GALLERY} element={<Gallery />} />
-        <Route
-          path={PROGRAMME}
-          element={<div className="text-3xl font-bold underline">Contact</div>}
-        />
+        <Route path={GIFT_REGISTRY} element={<GiftRegistry />} />
       </Routes>
     </Layout>
   );

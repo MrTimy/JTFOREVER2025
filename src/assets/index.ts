@@ -48,3 +48,7 @@ export { default as CutePictures } from "./images/Cute couple posing together.pn
 
 export { default as ReceptionBackground } from "./images/reception.png";
 export { default as ReceptionGeneralBackground } from "./images/receptiongeneral.png";
+
+export { default as MoneyGift } from "./svgs/money-gift.svg";
+export { default as BoxedGift } from "./svgs/boxed-gift.svg";
+export { default as GiftBackground } from "./images/prepared-gifts.png";

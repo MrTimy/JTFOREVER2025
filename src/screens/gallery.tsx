@@ -24,7 +24,7 @@ const Page = () => {
       <div className="mx-auto max-w-web-max w-mobile-max">
         <div className="mb-6">
           <h2 className="text-3xl md:text-6xl font-cairo font-bold text-gray-900 mb-2 text-center">
-            Pick your photos and Videos
+            Upload your photos and Videos
           </h2>
           <div className="mt-2 text-sm text-gray-500">
             Files uploaded: {getUploadedCount()} / 6
