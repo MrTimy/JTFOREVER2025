@@ -5,12 +5,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation()?.pathname;
 
   const dontShowNavigation =
-    location === "/order-of-photograph" || location === "/order-of`";
+    location === "/order-of-photograph" || location === "/order-of-events";
   return (
     <div className="bg-beige min-h-screen">
-      {dontShowNavigation && <Navigation />}
+      {dontShowNavigation ? "" : <Navigation />}
+
       {children}
-      {dontShowNavigation && <Footer />}
+      {dontShowNavigation ? "" : <Footer />}
     </div>
   );
 }
