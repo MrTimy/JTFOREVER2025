@@ -6,8 +6,9 @@ import {
   ORDER_OF_EVENTS,
   PROGRAMME,
   GUEST_GALLERY,
+  SQAUD,
 } from "./routes";
-import { Home } from "./screens";
+import { Home, Sqaud } from "./screens";
 import Layout from "./_layout";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path={HOME} element={<Home />} />
+        <Route path={SQAUD} element={<Sqaud />} />
         <Route
           path={RSVP}
           element={<div className="text-3xl font-bold underline">About</div>}

@@ -38,3 +38,6 @@ export { default as BowlTie } from "./svgs/bowltie.svg";
 export { default as Gradient } from "./images/Frame 427318263.png";
 
 export { default as GroupGallery } from "./images/groupgallery.png";
+export { default as BridesmaidIcon } from "./svgs/female.svg";
+export { default as GroomIcon } from "./svgs/male.svg";
+export { default as Sample } from "./images/sample.png";
