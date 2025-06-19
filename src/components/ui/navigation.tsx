@@ -34,7 +34,9 @@ export default function Navigation() {
             </Link>
           ))}
         </div>
-        <Button text={"Get Access"} variants={"primary"} />
+        <Link to="/rsvp">
+          <Button text={"Get Access"} variants={"primary"} />
+        </Link>
       </div>
 
       {/* Mobile Navigation Button */}
@@ -92,11 +94,13 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="py-4 w-full">
-              <Button
-                text={"Get Access"}
-                variants={"primary"}
-                className="w-full"
-              />
+              <Link to="/rsvp">
+                <Button
+                  text={"Get Access"}
+                  variants={"primary"}
+                  className="w-full"
+                />
+              </Link>
             </div>
           </div>
         </div>

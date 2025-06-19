@@ -52,3 +52,5 @@ export { default as ReceptionGeneralBackground } from "./images/receptiongeneral
 export { default as MoneyGift } from "./svgs/money-gift.svg";
 export { default as BoxedGift } from "./svgs/boxed-gift.svg";
 export { default as GiftBackground } from "./images/prepared-gifts.png";
+
+export { default as RSVPBackground } from "./images/rsvpbackground.png";
