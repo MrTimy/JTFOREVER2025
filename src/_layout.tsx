@@ -7,7 +7,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const dontShowNavigation =
     location === "/order-of-photograph" ||
     location === "/order-of-events" ||
-    location === "/guest-gallery";
+    location === "/guest-gallery" ||
+    location === "/rsvp";
   return (
     <div className="bg-beige min-h-screen">
       {dontShowNavigation ? "" : <Navigation />}

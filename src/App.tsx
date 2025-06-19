@@ -7,6 +7,7 @@ import {
   SQAUD,
   ORDEROFPHOTOGRAPH,
   GIFT_REGISTRY,
+  RSVP,
 } from "./routes";
 import {
   Gallery,
@@ -14,6 +15,7 @@ import {
   Home,
   OrderofEvents,
   OrderOfPhotograph,
+  Rsvp,
   Sqaud,
 } from "./screens";
 import Layout from "./_layout";
@@ -28,6 +30,7 @@ function App() {
         <Route path={ORDER_OF_EVENTS} element={<OrderofEvents />} />
         <Route path={GUEST_GALLERY} element={<Gallery />} />
         <Route path={GIFT_REGISTRY} element={<GiftRegistry />} />
+        <Route path={RSVP} element={<Rsvp />} />
       </Routes>
     </Layout>
   );
