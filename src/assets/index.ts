@@ -38,3 +38,19 @@ export { default as BowlTie } from "./svgs/bowltie.svg";
 export { default as Gradient } from "./images/Frame 427318263.png";
 
 export { default as GroupGallery } from "./images/groupgallery.png";
+export { default as BridesmaidIcon } from "./svgs/female.svg";
+export { default as GroomIcon } from "./svgs/male.svg";
+export { default as Sample } from "./images/sample.png";
+
+export { default as OrderOfPhotoBackground } from "./images/orderofphotobg.png";
+export { default as OrderOfPhotoBox } from "./images/orderofphotos.png";
+export { default as CutePictures } from "./images/Cute couple posing together.png";
+
+export { default as ReceptionBackground } from "./images/reception.png";
+export { default as ReceptionGeneralBackground } from "./images/receptiongeneral.png";
+
+export { default as MoneyGift } from "./svgs/money-gift.svg";
+export { default as BoxedGift } from "./svgs/boxed-gift.svg";
+export { default as GiftBackground } from "./images/prepared-gifts.png";
+
+export { default as RSVPBackground } from "./images/rsvpbackground.png";

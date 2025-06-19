@@ -2,12 +2,22 @@ import "./App.css";
 import { Route, Routes } from "react-router";
 import {
   HOME,
-  RSVP,
   ORDER_OF_EVENTS,
-  PROGRAMME,
   GUEST_GALLERY,
+  SQAUD,
+  ORDEROFPHOTOGRAPH,
+  GIFT_REGISTRY,
+  RSVP,
 } from "./routes";
-import { Home } from "./screens";
+import {
+  Gallery,
+  GiftRegistry,
+  Home,
+  OrderofEvents,
+  OrderOfPhotograph,
+  Rsvp,
+  Sqaud,
+} from "./screens";
 import Layout from "./_layout";
 
 function App() {
@@ -15,22 +25,12 @@ function App() {
     <Layout>
       <Routes>
         <Route path={HOME} element={<Home />} />
-        <Route
-          path={RSVP}
-          element={<div className="text-3xl font-bold underline">About</div>}
-        />
-        <Route
-          path={ORDER_OF_EVENTS}
-          element={<div className="text-3xl font-bold underline">Contact</div>}
-        />
-        <Route
-          path={PROGRAMME}
-          element={<div className="text-3xl font-bold underline">Contact</div>}
-        />
-        <Route
-          path={GUEST_GALLERY}
-          element={<div className="text-3xl font-bold underline">Contact</div>}
-        />
+        <Route path={SQAUD} element={<Sqaud />} />
+        <Route path={ORDEROFPHOTOGRAPH} element={<OrderOfPhotograph />} />
+        <Route path={ORDER_OF_EVENTS} element={<OrderofEvents />} />
+        <Route path={GUEST_GALLERY} element={<Gallery />} />
+        <Route path={GIFT_REGISTRY} element={<GiftRegistry />} />
+        <Route path={RSVP} element={<Rsvp />} />
       </Routes>
     </Layout>
   );
