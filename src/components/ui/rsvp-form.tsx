@@ -1,7 +1,30 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import reserveRsvp from "../../api/reserve-rsvp";
+import { Toaster, toast } from "sonner";
+
 export default function RSVPForm({ rsvpType }: { rsvpType: string }) {
+  const handleRsvpSubmit = async (e: any) => {
+    e.preventDefault();
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const numberOfAttendees = e.target[2].value || 1;
+    const { error } = await reserveRsvp(
+      name,
+      email,
+      rsvpType,
+      +numberOfAttendees
+    );
+
+    if (error) {
+      toast.error("Something went wrong, please try again later.");
+    } else {
+      toast.success("Your RSVP has been submitted successfully!");
+      e.target.reset();
+    }
+  };
   return (
     <div className="max-w-[1240px] w-[95%] mx-auto">
-      <form className="grid gap-4">
+      <form className="grid gap-4" onSubmit={handleRsvpSubmit}>
         <div className="bg-white md:p-11 p-3">
           <h2 className="md:text-6xl text-4xl font-cairo font-bold">
             {rsvpType === "singles" ? "Singles" : "Family"} Form
@@ -39,15 +62,25 @@ export default function RSVPForm({ rsvpType }: { rsvpType: string }) {
             Confirm Attendance
           </label>
           <div className="flex items-center gap-4">
-            <button className="bg-green-600 text-white font-cairo p-2 min-w-[100px] rounded-lg text-lg">
+            <button
+              className="bg-green-600 text-white font-cairo p-2 min-w-[100px] rounded-lg text-lg"
+              type="submit"
+            >
               Yes
             </button>
-            <button className="bg-red-600 text-white font-cairo p-2 min-w-[100px] rounded-lg text-lg">
+            <button
+              className="bg-red-600 text-white font-cairo p-2 min-w-[100px] rounded-lg text-lg"
+              type="button"
+              onClick={() => {
+                window.history.back();
+              }}
+            >
               No
             </button>
           </div>
         </div>
       </form>
+      <Toaster />
     </div>
   );
 }
