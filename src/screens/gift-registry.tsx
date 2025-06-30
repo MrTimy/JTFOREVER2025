@@ -59,7 +59,10 @@ export default function Page() {
             <p className="font-bold mb-8 mt-6">Click below to view </p>
             <Button
               text="Amazon Registry"
-              onClick={() => {}}
+              onClick={() => {
+                window.location.href =
+                  "https://mywishlistng.com/event/wedding/jtforever2025";
+              }}
               className="bg-burnt-orange text-white"
             />
           </div>
