@@ -2,11 +2,13 @@
 import { useState } from "react";
 import FileUploadItem from "../components/upload";
 import Button from "../components/button";
+import { toast } from "sonner";
 
 type FileData = { name: string; [key: string]: any } | null;
 
 const Page = () => {
   const [allFiles, setAllFiles] = useState<Record<string, FileData>>({});
+  const [isSending, setIsSending] = useState(false);
 
   const handleFileChange = (uploadId: string, fileData: FileData) => {
     setAllFiles((prev) => ({
@@ -17,6 +19,41 @@ const Page = () => {
 
   const getUploadedCount = () => {
     return Object.values(allFiles).filter((file) => file !== null).length;
+  };
+
+  const uploadAllFiles = async () => {
+    setIsSending(true);
+    const filesToUpload = Object.values(allFiles).filter(
+      (file) => file !== null
+    ) as any[];
+
+    const uploadedUrls: string[] = [];
+
+    for (const fileData of filesToUpload) {
+      const file = fileData.file ?? fileData; // adapt if needed
+
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", "JTForever");
+
+      try {
+        const res = await fetch(
+          "https://api.cloudinary.com/v1_1/dumcb8shq/image/upload",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+        const data = await res.json();
+        uploadedUrls.push(data.secure_url);
+      } catch (error) {
+        console.error("Upload failed:", error);
+      }
+    }
+
+    toast.success("Thanks for sharing the moment with us");
+    setAllFiles({});
+    setIsSending(false);
   };
 
   return (
@@ -43,7 +80,12 @@ const Page = () => {
           ))}
         </div>
         <div className="flex justify-end mt-6">
-          <Button text="Finish" className="bg-purple-500 text-white" />
+          <Button
+            text="Finish"
+            className="bg-purple-500 text-white"
+            onClick={uploadAllFiles}
+            disabled={isSending || getUploadedCount() === 0}
+          />
         </div>
 
         {/* Summary */}
