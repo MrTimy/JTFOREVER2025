@@ -381,21 +381,40 @@ export default function Page() {
 
             <div className="grid md:grid-cols-3 md:gap-20 gap-5 max-w-[1034px] place-items-center mx-auto mt-6">
               <SquadCard
-                name="Cynthia James"
-                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-                gender="female"
+                name="Philip"
+                content="My friend, my brother Timy took a big bold decision to form a team, to be well complemented and helped to conquer and make more giant strides in life. Well done my guy.  
+             
+             As single brothers back then, we worked side by side in the ministry winning soul for the Lord zealously and eloquently. As my roommates, back then in the BQ, we lived peacefully, a glimpse of how peaceful we will enjoy living together in paradise. Nothing do you my guy.
+             
+             I was super excited when it became official that it was Jayy. Then I knew I had done a good job behind the scenes of warming the feets against it becoming cold feet at its early stages, reassured when doubts crippled in. Jayy was indeed a fitted companion. She is an 'A1' grade material. Don't ask me how I know. I just know, I know. 
+             Jayy and Timy are my people. They are both spiritual, articulated, educated, insightful and friendly. This was the right choice. Last Last We Go Dey Alright.
+             "
+                gender="male"
                 image={Philip}
               />
               <SquadCard
-                name="Cynthia James"
-                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+                name=" (Maid of Honour)"
+                content="I was there when the JT_Lovestory began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person. (Thought it would always be me but, oh well..) 
+              Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
+              Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.
+              It’s Jayy and Tee forever!
+              With love,
+              Nwa."
                 gender="female"
                 image={Doris}
               />
               <SquadCard
-                name="Cynthia James"
-                content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-                gender="female"
+                name="Ifeanyi"
+                content="To Timothy My Friend, My Brother, My Day One
+              As you prepare to walk down the aisle this August, I’ve found myself reflecting deeply on the journey we’ve shared over the last eight years. It’s hard to believe how far we’ve come from two young students navigating the chaos of university life, to this moment of maturity, commitment, and love.
+              You were my very first friend in university. In a place where everything was new and unfamiliar, your friendship felt like home. From day one, we connected over books, late-night classes, laughter, and mutual dreams. You weren’t just my friend; you became my reading partner, my night class buddy, and one of the few people who truly believed in me when things got tough.
+              There’s something about studying with you that always makes learning easier. You had this way of explaining things, making sense out of confusion. Whether we were buried in textbooks or sneaking in jokes between chapters, you made studying feel like less of a chore and more of a shared mission. You encouraged me in ways that stuck. You always believed I could do more, be more and I’ll never forget that.
+              You’re the perfect mix of bad and good, the kind of bad that made life fun, spontaneous, and exciting, and the kind of good that made you dependable, honest, and principled. You were funny, always ready with a sarcastic comment or a perfectly timed joke. But beyond the laughter, you were also deeply disciplined. You knew when it was time to play, and when it was time to work. And I admired you for that balance. Oh, the memories we made. From sneaking away to the pool to cool off after long lectures, to laughing until our stomachs hurt. From sharing stress during exams to celebrating small victories with snacks and night walks. Our university days were golden, filled with a rhythm that only we understood. The blend of study and fun, of focus and freedom, made it all unforgettable. Those days were some of the best of my life, and you were a huge part of that. Now, as you step into this new chapter of your life, I just want to say how proud I am of the man you’ve become. Love is no small thing, and marriage is one of the bravest, most beautiful commitments a person can make. Your bride is lucky she’s getting someone who’s loyal, thoughtful, strong, and real. 
+              Timothy, may your marriage be filled with laughter as loud as our night class jokes, support as strong as our study bond, and love as deep as the friendship we built over these amazing years. I’m so grateful for everything we’ve shared and all that lies ahead for you. Cheers to love, to beginnings, and to a lifetime of sweet memories yet to be made. Congratulations, my dear friend. You deserve all the happiness in the world.
+              With all my heart,
+              IFEANYI aka HYBRID ✨
+              "
+                gender="male"
                 image={Ifeanyi}
               />
             </div>
