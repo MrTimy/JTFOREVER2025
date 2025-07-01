@@ -54,3 +54,20 @@ export { default as BoxedGift } from "./svgs/boxed-gift.svg";
 export { default as GiftBackground } from "./images/prepared-gifts.png";
 
 export { default as RSVPBackground } from "./images/rsvpbackground.png";
+
+//bridesmaid
+export { default as Blossom } from "./images/Blossom.jpg";
+export { default as Jasmine } from "./images/Jasmine.jpeg";
+export { default as Doris } from "./images/Maid of Honor.jpg";
+export { default as Praise } from "./images/Praise.jpg";
+export { default as Sharon } from "./images/Sharon Osuji.jpg";
+export { default as Sylviana } from "./images/Sylviana.jpg";
+export { default as Wemimo } from "./images/Wemimo.jpeg";
+
+//groomsmen
+export { default as Philip } from "./images/CHIBUEZE.jpeg";
+export { default as Ifeanyi } from "./images/ifeanyi.jpeg";
+export { default as Jonathan } from "./images/Jonathan.jpeg";
+export { default as Nnamdi } from "./images/Nnamdi.jpeg";
+export { default as Obed } from "./images/Obed.jpeg";
+export { default as Samcusta } from "./images/Samcusta.jpeg";

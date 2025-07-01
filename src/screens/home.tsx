@@ -26,7 +26,9 @@ import {
   LeftFlower,
   RightFlower,
   WeddingImage13,
-  Sample,
+  Philip,
+  Doris,
+  Ifeanyi,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
 import { EventDetails } from "../constants/constant";
@@ -82,7 +84,16 @@ const loveStory: {
 export default function Page() {
   return (
     <div>
-      <Swiper navigation={true} modules={[Navigation]} className="h-[600px]">
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="h-[600px]"
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        loop
+      >
         <SwiperSlide>
           <div className="relative w-full h-full">
             <div className="absolute inset-0 bg-[rgba(204,85,0,0.3)] z-10"></div>
@@ -320,7 +331,7 @@ export default function Page() {
                   {wear}
                 </p>
                 <a
-                  href="http://"
+                  href="https://www.google.com/maps/place/3J's+Hotels+%26+Apartments/@9.0735252,7.434917,17z/data=!4m10!3m9!1s0x104e750fcb20c143:0xedd8b612f838b8a4!5m3!1s2025-07-01!4m1!1i2!8m2!3d9.0735252!4d7.434917!16s%2Fg%2F11hdvkv4_5?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-burnt-orange w-full text-white p-2.5 h-14 flex items-center justify-center font-cairo font-semibold rounded-lg"
@@ -371,19 +382,19 @@ export default function Page() {
                 name="Cynthia James"
                 content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
                 gender="female"
-                image={Sample}
+                image={Philip}
               />
               <SquadCard
                 name="Cynthia James"
                 content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
                 gender="female"
-                image={Sample}
+                image={Doris}
               />
               <SquadCard
                 name="Cynthia James"
                 content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
                 gender="female"
-                image={Sample}
+                image={Ifeanyi}
               />
             </div>
             <Link to={"/squad"}>

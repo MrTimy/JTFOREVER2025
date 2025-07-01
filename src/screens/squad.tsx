@@ -1,4 +1,20 @@
-import { LeftFlower, RightFlower, Sample } from "../assets";
+import {
+  Blossom,
+  Doris,
+  Ifeanyi,
+  Jasmine,
+  Jonathan,
+  LeftFlower,
+  Nnamdi,
+  Obed,
+  Philip,
+  Praise,
+  RightFlower,
+  Samcusta,
+  Sharon,
+  Sylviana,
+  Wemimo,
+} from "../assets";
 import SquadCard from "../components/squad-card";
 
 export default function Page() {
@@ -15,97 +31,80 @@ export default function Page() {
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
+          image={Blossom}
         />
         <SquadCard
           name="Charles Michael"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="male"
-          image={Sample}
+          image={Philip}
         />
         <SquadCard
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
+          image={Jasmine}
+        />
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="male"
+          image={Ifeanyi}
         />
         <SquadCard
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
+          image={Doris}
+        />
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="male"
+          image={Jonathan}
         />
         <SquadCard
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
+          image={Praise}
+        />
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="male"
+          image={Nnamdi}
+        />
+
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="female"
+          image={Wemimo}
+        />
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="male"
+          image={Obed}
         />
         <SquadCard
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
+          image={Sylviana}
+        />
+        <SquadCard
+          name="Cynthia James"
+          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
+          gender="male"
+          image={Samcusta}
         />
         <SquadCard
           name="Cynthia James"
           content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
           gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
-        />
-        <SquadCard
-          name="Cynthia James"
-          content="Your love, support, and friendship mean the world. You've helped carry laughter, calm nerves, and shared unforgettable memories. "
-          gender="female"
-          image={Sample}
+          image={Sharon}
         />
       </div>
     </div>
