@@ -360,11 +360,13 @@ export default function Page() {
             <p className="text-2xl font-cairo font-medium text-white">
               Please tell us if you will be able to come
             </p>
-            <Button
-              text="RSVP"
-              variants={"secondary"}
-              className="w-[165px] mx-auto mt-12"
-            />
+            <Link to="/rsvp">
+              <Button
+                text="RSVP"
+                variants={"secondary"}
+                className="w-[165px] mx-auto mt-12"
+              />
+            </Link>
           </div>
         </div>
 
@@ -456,11 +458,13 @@ export default function Page() {
             anything, we can't wait to share this special moment with you. Check
             out our Gift Registry
           </p>
-          <Button
-            text="OUR WISHLIST"
-            variants={"primary"}
-            className="w-[258px] h-14"
-          />
+          <Link to="/gift-registry">
+            <Button
+              text="OUR WISHLIST"
+              variants={"primary"}
+              className="w-[258px] h-14"
+            />
+          </Link>
         </div>
 
         {/* Guests Gallery */}
