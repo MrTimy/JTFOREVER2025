@@ -1,8 +1,23 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import reserveRsvp from "../../api/reserve-rsvp";
 import { Toaster, toast } from "sonner";
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
+
+const API_KEY = import.meta.env.VITE_BREVO_API_KEY;
 
 export default function RSVPForm({ rsvpType }: { rsvpType: string }) {
+  function splitName(fullName: string): {
+    FIRSTNAME: string;
+    LASTNAME: string;
+  } {
+    if (!fullName) return { FIRSTNAME: "", LASTNAME: "" };
+    const parts = fullName.trim().split(/\s+/);
+    return {
+      FIRSTNAME: parts[0],
+      LASTNAME: parts.length > 1 ? parts.slice(1).join(" ") : "",
+    };
+  }
   const handleRsvpSubmit = async (e: any) => {
     e.preventDefault();
     const name = e.target[0].value;
@@ -19,7 +34,36 @@ export default function RSVPForm({ rsvpType }: { rsvpType: string }) {
       toast.error("Something went wrong, please try again later.");
     } else {
       toast.success("Your RSVP has been submitted successfully!");
-      e.target.reset();
+      const { FIRSTNAME, LASTNAME } = splitName(name);
+      const options = {
+        method: "POST",
+        url: "https://api.brevo.com/v3/contacts",
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+          "api-key": API_KEY,
+        },
+        data: {
+          email: email,
+          attributes: {
+            FIRSTNAME,
+            LASTNAME,
+          },
+
+          ext_id: uuidv4(),
+          emailBlacklisted: false,
+          smsBlacklisted: false,
+          updateEnabled: false,
+          listIds: [2],
+        },
+      };
+
+      axios
+        .request(options)
+        .then(() => {
+          e.target.reset();
+        })
+        .catch((err) => toast.error(err));
     }
   };
   return (
