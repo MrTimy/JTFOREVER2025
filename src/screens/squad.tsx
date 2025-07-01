@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Blossom,
   Doris,
@@ -18,6 +19,9 @@ import {
 import SquadCard from "../components/squad-card";
 
 export default function Page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="max-w-web-max w-mobile-max mx-auto py-12">
       <div className="flex items-center justify-center font-lovers-quarrel text-5xl md:text-7xl pt-5 font-normal">

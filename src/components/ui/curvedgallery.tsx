@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { Gradient, GroupGallery } from "../../assets";
 import Button from "../button";
 
@@ -17,7 +18,9 @@ export default function CurvedGallery() {
           <h2 className="text-6xl md:text-8xl font-lovers-quarrel text-white mb-8 drop-shadow">
             Our Guests Gallery
           </h2>
-          <Button text="UPLOAD" className="text-burnt-orange! w-[204px]" />
+          <Link to="/guest-gallery">
+            <Button text="UPLOAD" className="text-burnt-orange! w-[204px]" />
+          </Link>
         </div>
         <div>
           <img
