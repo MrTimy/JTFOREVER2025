@@ -1,43 +1,56 @@
 import { useState, useEffect } from "react";
 
+const TARGET_DATE_KEY = "countdown_target_date";
+
+const FIXED_TARGET_DATE = new Date(Date.UTC(2025, 7, 30, 0, 0, 0));
+
+const getTimeLeft = (targetDate: Date) => {
+  const now = new Date();
+  const difference = targetDate.getTime() - now.getTime();
+
+  if (difference <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  return { days, hours, minutes, seconds };
+};
+
 const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 64,
-    hours: 22,
-    minutes: 45,
-    seconds: 11,
+  const [timeLeft, setTimeLeft] = useState(() => {
+    const stored = localStorage.getItem(TARGET_DATE_KEY);
+    let targetDate: Date;
+    if (stored) {
+      targetDate = new Date(stored);
+    } else {
+      targetDate = FIXED_TARGET_DATE;
+      localStorage.setItem(TARGET_DATE_KEY, targetDate.toISOString());
+    }
+    return getTimeLeft(targetDate);
   });
 
   useEffect(() => {
-    // Calculate the target date (current time + time left)
-    const now = new Date();
-    const targetDate = new Date(
-      now.getTime() +
-        timeLeft.days * 24 * 60 * 60 * 1000 +
-        timeLeft.hours * 60 * 60 * 1000 +
-        timeLeft.minutes * 60 * 1000 +
-        timeLeft.seconds * 1000
-    );
+    const stored = localStorage.getItem(TARGET_DATE_KEY);
+    let targetDate: Date;
+    if (stored) {
+      targetDate = new Date(stored);
+    } else {
+      targetDate = FIXED_TARGET_DATE;
+      localStorage.setItem(TARGET_DATE_KEY, targetDate.toISOString());
+    }
 
     const interval = setInterval(() => {
-      const now = new Date();
-      const difference = targetDate.getTime() - now.getTime();
-
-      if (difference <= 0) {
+      setTimeLeft(getTimeLeft(targetDate));
+      if (targetDate.getTime() - new Date().getTime() <= 0) {
         clearInterval(interval);
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        return;
+        localStorage.removeItem(TARGET_DATE_KEY);
       }
-
-      // Calculate time units
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      setTimeLeft({ days, hours, minutes, seconds });
     }, 1000);
 
     return () => clearInterval(interval);
