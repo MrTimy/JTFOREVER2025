@@ -1,36 +1,54 @@
 import { useState } from "react";
 
+
 const faqs = [
+
+   {
+    question: "Are kids welcome?",
+    answer:
+      "As much as we love your little ones, we will not be including them in the ceremony or reception. However, we recognize that some of you will be traveling with your kids, so please know they are welcome at the Friday cocktail reception and Sunday brunch!",
+  },
+   {
+    question: "How does the Guest Photo Upload work?",
+    answer:
+      "We know some of our guests have an eye for great shots — and we’d love to see the day through your lens! 📸 Whether it’s a sweet selfie, a moment with the couple, or a fun dance floor snap, your pictures are part of the memories we’ll cherish forever.You’ll be able to upload your photos easily on the website. All images will be saved securely in the cloud, so we (and you!) can access and relive the magic anytime.",
+  },
   {
     question: "What should I wear? Is there a dress code?",
     answer:
-      "[Include your dress code, e.g., “Cocktail attire,” “Garden party chic,” “Formal – but comfy shoes encouraged!”] We want you to feel great and enjoy the celebration, so dress to impress, but also to dance!",
+      "Formal – but comfy shoes encouraged! We want you to feel great and enjoy the celebration, so dress to impress, but also to dance!",
+  },
+   {
+    question: "Are they Hotels Near the Venue?",
+    answer:
+      "1. Top Rank Hotel Galaxy – Offers comfortable rooms with free breakfast and Wi‑Fi, plus a pool, spa, and gym expedia.com toprankhotelgalaxyutako.com,    2. Chida International Hotel – its a 3.5-star business-class hotel featuring an outdoor pool, health club, free breakfast, and airport shuttle, 3. Yanna Apartments by Khaliques – Serviced apartments with kitchenettes, spa, pool, and complimentary breakfast—ideal for families or longer stay, 4. Sandralia Hotel – Upscale option with an outdoor pool, fitness centre, spa facilities, and poolside bars"
   },
   {
     question: "What time should I arrive?",
     answer:
-      "The ceremony will begin at [Time], so please plan to arrive at least 15–20 minutes early to find your seat and get settled.",
+      "The ceremony will begin at 12PM, so please plan to arrive at least 15–20 minutes early to find your seat and get settled.",
   },
   {
     question: "Will the ceremony and reception be at the same location?",
     answer:
-      "Yes! (Or, if not: No, they are in different locations — but they’re close by. Directions and details are listed [here].)",
+      "No, they are in different locations — but they’re close by. Directions and details are listed in the event details.",
+  },
+  {
+    question: "What will the weather be like?",
+    answer:
+      "It’s August in Nigeria — which means there’s a good chance of rain. 🌧️ While we’re hopeful for clear skies and sunshine, we recommend guests come prepared, just in case. Umbrellas, covered shoes, or an extra wrap might come in handy! However, Rain or shine, it’s going to be a beautiful day — and we can’t wait to celebrate it with you. ☀️🌧️💕",
   },
   {
     question: "Is there parking available?",
     answer:
-      "Yes, parking is available at [Location]. Valet/self-parking/ride-share details: [insert relevant info]",
+      "Yes, There is plenty of free parking near the entrance of either Halls.",
   },
   {
     question: "Can I bring a plus-one?",
     answer:
-      "We’d love to celebrate with all our favorite people, but due to space constraints, we’re only able to accommodate the guests listed on your invitation. Thanks for understanding!",
+      "We’d love to celebrate with all our favorite people, but due to space constraints, we’re only able to accommodate the number of guests indicated on your Access card. Thanks for understanding!",
   },
-  {
-    question: "Are kids welcome?",
-    answer:
-      "[Your answer here — e.g., “We love your little ones, but we’re keeping it adults-only for the evening!” or “Yes, bring the whole crew!”]",
-  },
+ 
 ];
 
 export default function FAQ() {

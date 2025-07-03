@@ -48,34 +48,34 @@ const loveStory: {
   position?: "left" | "right";
 }[] = [
   {
-    title: "Our Fist Meet",
+    title: "🌱Our First Meet",
     timeline: "Monday January 11th, 2019",
     description:
-      "It all began with a simple moment—unexpected, yet unforgettable. Whether it was fate, coincidence, or a little bit of both, that day marked the beginning of everything. From strangers to something so much more, our journey started right there.",
+      "Janice: We were in the same congregation while in school. We knew each other, though from a distance. Our first picture together was after a Memorial observance- no butterflies, no sparks, just two people who loved Jehovah and shared mutual friends. Sometimes, we would walk together in the ministry. It was in one of those moments we found out Timothy shared the same names and initials as my dad, we had meaningful conversations that subtly planted the seeds of something deeper, neither of us knew it yet.",
     img: FirstMeet,
     position: "left",
   },
   {
-    title: "Our First Date",
+    title: "🤝A Quiet Bond",
     timeline: "Saturday January 18th, 2019",
     description:
-      "Nervous smiles, curious hearts, and that undeniable spark—our first date was the moment everything started to feel real. From the laughter we shared to the way time flew by, it was the beginning of something beautiful.",
+      "Timothy: What started as friendly waves and occasional check-ins soon grew into friendship. We texted, exchanged calls often, during the holidays we would keep up with each other, encourage each other to study, go out in service, and talk about parts in the meetings we both enjoyed. Still, everything remained simply platonic. But in hindsight, something warm and comforting was already building- quietly, beautifully, without pressure.",
     img: FirstDate,
     position: "right",
   },
   {
-    title: "Marriage Proposal",
+    title: "💬When It All Made Sense",
     timeline: "Friday January 18th, 2024",
     description:
-      "A question from the heart, a promise for a lifetime. In a moment filled with love, emotion, and happy tears, one simple “yes” changed everything. It was the start of forever, wrapped in love and sealed with a ring.",
+      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad.Janice: Timothy was really present- he encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. Timothy: When we finally reunited in school and had our first official date, everything fell in place",
     img: MarriageProposal,
     position: "left",
   },
   {
-    title: "Our Engagement",
+    title: "The Perfect Yes",
     timeline: "Wednesday December 29th, 2024",
     description:
-      "A celebration of love, commitment, and the beautiful journey ahead. Surrounded by joy and the people we love, our engagement marked the moment we officially said, “We’re in this together—forever.",
+      "Janice: Definitely, it was not always a smooth ride, we had our ups and downs but we were in this fully, deeply. But through every twist and turn, one thing stayed consistent, we wanted each other other as partners and we kept growing together.Timothy: And the proposal? Oh, she didn’t see it coming. It was everything we had hoped for calm, beautifully planned, and truly us.From that unforgettable moment to our engagement party with our friends, every step has brought us closer to our marriage. This is not just a new chapter, but a continuation of our beautiful journey, now, under the same roof, side by side, forever.",
     img: Engagement,
     position: "right",
   },
@@ -139,7 +139,7 @@ export default function Page() {
       <div className="grid py-20">
         <div className="grid place-items-center mx-auto w-full gap-8">
           <h3 className="font-cairo text-3xl font-normal uppercase">
-            Coming soon!!!
+            Count Down!!!
           </h3>
           <div className="h-0.5 w-1/4 bg-primary" />
           <CountdownTimer />
@@ -161,9 +161,9 @@ export default function Page() {
                       className="flex flex-col items-center lg:flex-row lg:gap-24 gap-12"
                     >
                       <div className="grid gap-2 max-w-[384px]">
-                        <h1 className="text-7xl font-normal font-lovers-quarrel">
+                        <h2 className="text-7xl font-normal font-lovers-quarrel">
                           {title}
-                        </h1>
+                        </h2>
                         <h2 className="text-lg lg:text-2xl font-normal font-cairo">
                           {timeline}
                         </h2>
@@ -336,7 +336,7 @@ export default function Page() {
                   rel="noopener noreferrer"
                   className="bg-burnt-orange w-full text-white p-2.5 h-14 flex items-center justify-center font-cairo font-semibold rounded-lg"
                 >
-                  MAPS.GOOGLE.COM
+                  MAP DIRECTIONS
                 </a>
               </div>
             ))}
@@ -393,7 +393,7 @@ export default function Page() {
                 image={Philip}
               />
               <SquadCard
-                name=" (Maid of Honour)"
+                name=" DORIS (Maid of Honour)"
                 content="I was there when the JT_Lovestory began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person. (Thought it would always be me but, oh well..) 
               Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
               Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.

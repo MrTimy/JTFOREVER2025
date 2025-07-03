@@ -21,7 +21,7 @@ export default function Page() {
       {!rsvpType && (
         <div className="w-full md:max-w-[1240px] mx-auto min-h-[930px] md:p-14 p-4 md:px-36">
           <div className="text-center font-lovers-quarrel md:text-[93px] text-6xl md:leading-20">
-            <p>Rsvp</p>
+            <p>RSVP</p>
           </div>
           <div className="bg-white max-w-[1240px] min-h-[320px] mt-24 p-4 grid gap-4 shadow-2xl">
             <div className="grid gap-4">

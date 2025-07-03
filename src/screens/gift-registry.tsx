@@ -18,7 +18,7 @@ export default function Page() {
       <div
         className="mt-8 flex flex-col md:flex-row gap-4 md:gap-10 mx-auto items-center justify-center relative"
         style={{
-          /*  backgroundImage: `url(${GiftBackground})`, */
+          // backgroundImage: `url(${GiftBackground})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -40,9 +40,9 @@ export default function Page() {
             <p className="font-light">Account Name:</p>
             <p className="font-bold">Timothy Eke</p>
             <p className="font-light">Account Name:</p>
-            <p className="font-bold">[Your Account Number]</p>
+            <p className="font-bold">0719066706</p>
             <p className="font-light">Bank Name:</p>
-            <p className="font-bold"> [Your Bank Name]</p>
+            <p className="font-bold"> Access Bank</p>
           </div>
         </div>
         <div className="bg-white min-h-[495px] grid gap-4 place-items-center text-center p-8 rounded-3xl font-cairo z-30">
@@ -51,14 +51,14 @@ export default function Page() {
             Gifts Registry
           </h2>
           <p className="text-chocolate-brown text-base md:text-2xl font-cairo max-w-[465px]">
-            We’ve also put together a few gift ideas on our Amazon Wedding
+            We’ve also put together a few gift ideas on our Wedding
             Registry, filled with thoughtful items to help us settle into our
             new life together.
           </p>
           <div className="grid gap-2 text-sm md:text-2xl font-normal text-chocolate-brown">
             <p className="font-bold mb-8 mt-6">Click below to view </p>
             <Button
-              text="Amazon Registry"
+              text="WishList"
               onClick={() => {
                 window.location.href =
                   "https://mywishlistng.com/event/wedding/jtforever2025";
