@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import {
   Weddingpicone,
   Weddingpictwo,
@@ -39,6 +39,7 @@ import SquadCard from "../components/squad-card";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { ORDER_OF_EVENTS, ORDEROFPHOTOGRAPH } from "../routes";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const loveStory: {
   title: string;
@@ -86,10 +87,10 @@ export default function Page() {
     <div>
       <Swiper
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         className="h-[600px]"
         autoplay={{
-          delay: 3000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         loop
@@ -142,7 +143,9 @@ export default function Page() {
             Count Down!!!
           </h3>
           <div className="h-0.5 w-1/4 bg-primary" />
-          <CountdownTimer />
+          <Fade>
+            <CountdownTimer />
+          </Fade>
         </div>
 
         {/* Love story */}
@@ -156,53 +159,57 @@ export default function Page() {
               ({ title, timeline, description, img, position }, idx) => (
                 <div className="z-60">
                   {position === "left" ? (
-                    <div
-                      key={idx}
-                      className="flex flex-col items-center lg:flex-row lg:gap-24 gap-12"
-                    >
-                      <div className="grid gap-2 max-w-[384px]">
-                        <h2 className="text-7xl font-normal font-lovers-quarrel">
-                          {title}
-                        </h2>
-                        <h2 className="text-lg lg:text-2xl font-normal font-cairo">
-                          {timeline}
-                        </h2>
-                        <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
-                          {description}
-                        </p>
+                    <Slide direction="up" cascade>
+                      <div
+                        key={idx}
+                        className="flex flex-col items-center lg:flex-row lg:gap-24 gap-12"
+                      >
+                        <div className="grid gap-2 max-w-[384px]">
+                          <h1 className="text-7xl font-normal font-lovers-quarrel">
+                            {title}
+                          </h1>
+                          <h2 className="text-lg lg:text-2xl font-normal font-cairo">
+                            {timeline}
+                          </h2>
+                          <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
+                            {description}
+                          </p>
+                        </div>
+                        <div className="border border-[#868686] rounded-full p-2">
+                          <img
+                            src={img}
+                            alt={title}
+                            className="w-[320px] h-[320px] rounded-full"
+                          />
+                        </div>
                       </div>
-                      <div className="border border-[#868686] rounded-full p-2">
-                        <img
-                          src={img}
-                          alt={title}
-                          className="w-[320px] h-[320px] rounded-full"
-                        />
-                      </div>
-                    </div>
+                    </Slide>
                   ) : (
-                    <div
-                      key={idx}
-                      className="flex flex-col-reverse items-center lg:flex-row lg:gap-24 gap-12"
-                    >
-                      <div className="border border-[#868686] rounded-full p-2">
-                        <img
-                          src={img}
-                          alt={title}
-                          className="w-[320px] h-[320px] rounded-full"
-                        />
+                    <Slide direction="left" cascade>
+                      <div
+                        key={idx}
+                        className="flex flex-col-reverse items-center lg:flex-row lg:gap-24 gap-12"
+                      >
+                        <div className="border border-[#868686] rounded-full p-2">
+                          <img
+                            src={img}
+                            alt={title}
+                            className="w-[320px] h-[320px] rounded-full"
+                          />
+                        </div>
+                        <div className="grid gap-2 max-w-[384px]">
+                          <h1 className="text-7xl font-normal font-lovers-quarrel">
+                            {title}
+                          </h1>
+                          <h2 className="text-lg lg:text-2xl font-normal font-cairo">
+                            {timeline}
+                          </h2>
+                          <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
+                            {description}
+                          </p>
+                        </div>
                       </div>
-                      <div className="grid gap-2 max-w-[384px]">
-                        <h1 className="text-7xl font-normal font-lovers-quarrel">
-                          {title}
-                        </h1>
-                        <h2 className="text-lg lg:text-2xl font-normal font-cairo">
-                          {timeline}
-                        </h2>
-                        <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
-                          {description}
-                        </p>
-                      </div>
-                    </div>
+                    </Slide>
                   )}
                 </div>
               )
@@ -229,80 +236,82 @@ export default function Page() {
           <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
             Our Gallery
           </h1>
-          <div className="mx-auto grid max-w-[1200px] bg-white p-2">
-            <div className="grid grid-cols-12 gap-2">
-              {/* Top row */}
-              <div className="col-span-4">
-                <img
-                  src={WeddingImage1}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="col-span-5">
-                <img
-                  src={WeddingImage2}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="col-span-3">
-                <img
-                  src={WeddingImage3}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <Zoom>
+            <div className="mx-auto grid max-w-[1200px] bg-white p-2">
+              <div className="grid grid-cols-12 gap-2">
+                {/* Top row */}
+                <div className="col-span-4">
+                  <img
+                    src={WeddingImage1}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-5">
+                  <img
+                    src={WeddingImage2}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-3">
+                  <img
+                    src={WeddingImage3}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              {/* Middle row */}
-              <div className="col-span-4 row-span-2">
-                <img
-                  src={WeddingImage4}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="col-span-3">
-                <img
-                  src={WeddingImage5}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="col-span-5 row-span-2">
-                <img
-                  src={WeddingImage6}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+                {/* Middle row */}
+                <div className="col-span-4 row-span-2">
+                  <img
+                    src={WeddingImage4}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-3">
+                  <img
+                    src={WeddingImage5}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-5 row-span-2">
+                  <img
+                    src={WeddingImage6}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              {/* Lower middle */}
-              <div className="col-span-3 row-span-2">
-                <img
-                  src={WeddingImage7}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+                {/* Lower middle */}
+                <div className="col-span-3 row-span-2">
+                  <img
+                    src={WeddingImage7}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              {/* Bottom row */}
-              <div className="col-span-4">
-                <img
-                  src={WeddingImage8}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="col-span-5">
-                <img
-                  src={WeddingImage9}
-                  alt="wedding"
-                  className="w-full h-full object-cover"
-                />
+                {/* Bottom row */}
+                <div className="col-span-4">
+                  <img
+                    src={WeddingImage8}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-5">
+                  <img
+                    src={WeddingImage9}
+                    alt="wedding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </Zoom>
         </div>
 
         {/* Event Details */}
@@ -380,32 +389,37 @@ export default function Page() {
             </div>
 
             <div className="grid md:grid-cols-3 md:gap-20 gap-5 max-w-[1034px] place-items-center mx-auto mt-6">
-              <SquadCard
-                name="Philip"
-                content="My friend, my brother Timy took a big bold decision to form a team, to be well complemented and helped to conquer and make more giant strides in life. Well done my guy.  
+              <Slide direction="left">
+                <SquadCard
+                  name="Philip"
+                  content="My friend, my brother Timy took a big bold decision to form a team, to be well complemented and helped to conquer and make more giant strides in life. Well done my guy.  
              
              As single brothers back then, we worked side by side in the ministry winning soul for the Lord zealously and eloquently. As my roommates, back then in the BQ, we lived peacefully, a glimpse of how peaceful we will enjoy living together in paradise. Nothing do you my guy.
              
              I was super excited when it became official that it was Jayy. Then I knew I had done a good job behind the scenes of warming the feets against it becoming cold feet at its early stages, reassured when doubts crippled in. Jayy was indeed a fitted companion. She is an 'A1' grade material. Don't ask me how I know. I just know, I know. 
              Jayy and Timy are my people. They are both spiritual, articulated, educated, insightful and friendly. This was the right choice. Last Last We Go Dey Alright.
              "
-                gender="male"
-                image={Philip}
-              />
-              <SquadCard
-                name=" DORIS (Maid of Honour)"
-                content="I was there when the JT_Lovestory began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person. (Thought it would always be me but, oh well..) 
+                  gender="male"
+                  image={Philip}
+                />
+              </Slide>
+              <Slide direction="up">
+                <SquadCard
+                  name=" (Maid of Honour)"
+                  content="I was there when the JT_Lovestory began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person. (Thought it would always be me but, oh well..) 
               Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
               Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.
               It’s Jayy and Tee forever!
               With love,
               Nwa."
-                gender="female"
-                image={Doris}
-              />
-              <SquadCard
-                name="Ifeanyi"
-                content="To Timothy My Friend, My Brother, My Day One
+                  gender="female"
+                  image={Doris}
+                />
+              </Slide>
+              <Slide direction="right">
+                <SquadCard
+                  name="Ifeanyi"
+                  content="To Timothy My Friend, My Brother, My Day One
               As you prepare to walk down the aisle this August, I’ve found myself reflecting deeply on the journey we’ve shared over the last eight years. It’s hard to believe how far we’ve come from two young students navigating the chaos of university life, to this moment of maturity, commitment, and love.
               You were my very first friend in university. In a place where everything was new and unfamiliar, your friendship felt like home. From day one, we connected over books, late-night classes, laughter, and mutual dreams. You weren’t just my friend; you became my reading partner, my night class buddy, and one of the few people who truly believed in me when things got tough.
               There’s something about studying with you that always makes learning easier. You had this way of explaining things, making sense out of confusion. Whether we were buried in textbooks or sneaking in jokes between chapters, you made studying feel like less of a chore and more of a shared mission. You encouraged me in ways that stuck. You always believed I could do more, be more and I’ll never forget that.
@@ -414,10 +428,12 @@ export default function Page() {
               With all my heart,
               IFEANYI aka HYBRID ✨
               "
-                gender="male"
-                image={Ifeanyi}
-              />
+                  gender="male"
+                  image={Ifeanyi}
+                />
+              </Slide>
             </div>
+
             <Link to={"/squad"}>
               <button className="w-[165px] items-center gap-1 p-[10px] min-h-12 mx-auto mt-12 bg-burnt-orange rounded-full text-white font-cairo flex justify-center cursor-pointer">
                 See more <ArrowRight />
