@@ -12,9 +12,9 @@ export default function Navigation() {
     { name: "Gallery", path: "#our-gallery" },
     { name: "Event Details", path: "/order-of-events" },
     { name: "RSVP", path: "/rsvp" },
-    { name: "Bridal Party", path: "/squad" },
+    { name: "The Squad", path: "/squad" },
     { name: "Gift Registry", path: "/gift-registry" },
-    { name: "Guest Gallery", path: "/guest-gallery" },
+    { name: "UPLOAD", path: "/guest-gallery" },
   ];
 
   const toggleMenu = () => {

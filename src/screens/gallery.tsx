@@ -61,16 +61,16 @@ const Page = () => {
       <div className="mx-auto max-w-web-max w-mobile-max">
         <div className="mb-6">
           <h2 className="text-3xl md:text-6xl font-cairo font-bold text-gray-900 mb-2 text-center">
-            Upload your photos and Videos
+            Upload your Beautiful Photos and Videos
           </h2>
           <div className="mt-2 text-sm text-gray-500">
-            Files uploaded: {getUploadedCount()} / 6
+            Files uploaded: {getUploadedCount()} / 21
           </div>
         </div>
 
         {/* Grid of Upload Areas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
-          {[1, 2, 3, 4, 5, 6].map((id) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 place-items-center">
+          {[1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21].map((id) => (
             <FileUploadItem
               key={id}
               id={id.toString()}

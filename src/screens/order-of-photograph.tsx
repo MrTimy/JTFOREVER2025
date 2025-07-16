@@ -25,7 +25,7 @@ export default function Page() {
         }}
       >
         <div className="text-center font-lovers-quarrel md:text-[131px] text-6xl md:leading-20">
-          <p>Time &</p>
+          <p>Timy &</p>
           <p>Jayy</p>
         </div>
         <div className="flex items-center justify-between flex-col md:flex-row">
@@ -37,20 +37,20 @@ export default function Page() {
               <p className="font-bold text-xl">Couple with:</p>
               <ul className="text-xl grid gap-1">
                 <li> Officiating Ministers</li>
-                <li> Couple Church Leaders</li>
+                <li> Couple with Lifecamp Congregation</li>
                 <li>Bride Alone Bridegroom</li>
-                <li> Alone Alone</li>
+                <li> Groom Alone</li>
               </ul>
               <p className="font-bold text-xl mt-8">Couple with:</p>
               <ul className="text-xl grid gap-1">
                 <li> Maid of Honour</li>
                 <li> Best Man</li>
-                <li>Groom’s Parent</li>
-                <li>Bride’s Parent</li>
-                <li>Groom’s Parent</li>
-                <li>Bride’s Parent</li>
-                <li>Groom’s Parent</li>
-                <li>Bride’s Parent</li>
+                <li>Groom’s Family</li>
+                <li>Bride’s Family</li>
+                <li>LifeCamp Congregation</li>
+                <li>Compumetrics Solutions Staff</li>
+                <li>UUTH Staff</li>
+                <li>Bride’s Par</li>
                 <li>Groom’s Parent</li>
                 <li>Bride’s Parent</li>
               </ul>

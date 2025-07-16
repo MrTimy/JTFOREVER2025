@@ -21,26 +21,26 @@ export default function Page() {
         }}
       >
         <div className="text-center font-lovers-quarrel md:text-[93px] text-6xl md:leading-20">
-          <p>Wedding Reception Program</p>
+          <p>Wedding reception program</p>
         </div>
         <div className="flex items-center justify-center flex-col md:flex-row">
           <div className="grid gap-8 font-cairo">
             <div className="mt-8 text-center">
               <ol className="text-xl grid gap-3 font-normal">
-                <li>1. Guests arrives</li>
-                <li>2. Cooktail served</li>
-                <li>3. Guests seated</li>
-                <li>4. Bride & Groom entry and Introduction</li>
-                <li>5. Loyal Toast</li>
-                <li>6. Cutting of the Cake</li>
-                <li>7. Bridal Waltz</li>
-                <li>8. Family and Friends invited to join</li>
-                <li>9. Dancing</li>
-                <li>10. Going away ritual</li>
-                <li>11. Single Ladies assemble for bouquet throwing</li>
-                <li>12. Single Men assemble for garter throwin</li>
-                <li>13. Circle is formed for Farewell</li>
-                <li>14. Bride and Groom waved goodbye</li>
+                <li>1. Arrival of guests</li>
+                <li>2. Meet our families </li>
+                <li>3. Couple entrance</li>
+                <li>4. Opening Prayer</li>
+                <li>5. Chairman’s opening remark</li>
+                <li>6. Cutting the cake</li>
+                <li>7. Our first dance</li>
+                <li>8. Audience Karaoke (Retro)</li>
+                <li>9. Couple speech </li>
+                <li>10. Couple’s Dance with Parents</li>
+                <li>11. Let's Play Games</li>
+                <li>12. MOH Speech</li>
+                <li>13. Grooms vote of thanks</li>
+                <li>14. Closing prayer</li>
                 <li>15. General dancing to contiune (optional) </li>
               </ol>
             </div>
