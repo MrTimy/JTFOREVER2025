@@ -21,7 +21,7 @@ export default function Page() {
         }}
       >
         <div className="text-center font-lovers-quarrel md:text-[93px] text-6xl md:leading-20">
-          <p>Wedding reception program</p>
+          <p>Wedding Reception Program</p>
         </div>
         <div className="flex items-center justify-center flex-col md:flex-row">
           <div className="grid gap-8 font-cairo">
@@ -35,13 +35,12 @@ export default function Page() {
                 <li>6. Cutting the cake</li>
                 <li>7. Our first dance</li>
                 <li>8. Audience Karaoke (Retro)</li>
-                <li>9. Couple speech </li>
+                <li>9. Couple's speech </li>
                 <li>10. Couple’s Dance with Parents</li>
                 <li>11. Let's Play Games</li>
                 <li>12. MOH Speech</li>
                 <li>13. Grooms vote of thanks</li>
                 <li>14. Closing prayer</li>
-                <li>15. General dancing to contiune (optional) </li>
               </ol>
             </div>
           </div>

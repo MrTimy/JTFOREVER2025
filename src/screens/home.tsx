@@ -26,7 +26,7 @@ import {
   LeftFlower,
   RightFlower,
   WeddingImage13,
-  Philip,
+  ThankGod,
   Doris,
   Ifeanyi,
 } from "../assets";
@@ -50,7 +50,7 @@ const loveStory: {
 }[] = [
   {
     title: "Our First Meet",
-    timeline: "Drums rolling🥁🥁",
+    timeline: "",
     description:
       "Janice: We were in the same congregation while in school. We knew each other, though from a distance. Our first picture together was after a Memorial observance- no butterflies, no sparks, just two people who loved Jehovah and shared mutual friends. Sometimes, we would walk together in the ministry. It was in one of those moments we found out Timothy shared the same names and initials as my dad, we had meaningful conversations that subtly planted the seeds of something deeper, neither of us knew it yet.",
     img: FirstMeet,
@@ -58,7 +58,7 @@ const loveStory: {
   },
   {
     title: "Our Friendship",
-    timeline: "The Part we both Liked 😍😍",
+    timeline: "",
     description:
       "Timothy: What started as friendly waves and occasional check-ins soon grew into friendship. We texted, exchanged calls often, during the holidays we would keep up with each other, encourage each other to study, go out in service, and talk about parts in the meetings we both enjoyed. Still, everything remained simply platonic. But in hindsight, something warm and comforting was already building- quietly, beautifully, without pressure.",
     img: FirstDate,
@@ -66,17 +66,17 @@ const loveStory: {
   },
   {
     title: "Growing Together",
-    timeline: "The Love Story 💕💕",
+    timeline: "",
     description:
-      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. Janice: Timothy was really present- he encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast.Timothy: When we finally reunited in school and had our first official date, everything fell in place. ",
+      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. Janice: Timothy was really present- he encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. When we finally reunited in school and had our first official date, everything fell in place. ",
     img: MarriageProposal,
     position: "left",
   },
   {
     title: "The Perfect Proposal",
-    timeline: "Cue the music and hold your breath 💍💍",
+    timeline: "",
     description:
-      "Janice: Definitely, it was not always a smooth ride, we had our ups and downs but we were in this fully, deeply. But through every twist and turn, one thing stayed consistent, we wanted each other other as partners and we kept growing together.Timothy: And the proposal? Oh, she didn’t see it coming. It was everything we had hoped for calm, beautifully planned, and truly us.From that unforgettable moment to our engagement party with our friends, every step has brought us closer to our marriage.This is not just a new chapter, but a continuation of our beautiful journey, now, under the same roof, side by side, forever.",
+      "Janice: Definitely, it was not always a smooth ride, we had our ups and downs but we were in this fully, deeply. But through every twist and turn, one thing stayed consistent, we wanted each other other as partners and we kept growing together.               Timothy: And the proposal? Oh, she didn’t see it coming. It was everything we had hoped for calm, beautifully planned, and truly us. From that unforgettable moment to our engagement party with our friends, every step has brought us closer to our marriage. This is not just a new chapter, but a continuation of our beautiful journey, now, under the same roof, side by side, forever.",
     img: Engagement,
     position: "right",
   },
@@ -140,7 +140,7 @@ export default function Page() {
       <div className="grid py-20">
         <div className="grid place-items-center mx-auto w-full gap-8">
           <h3 className="font-cairo text-3xl font-normal uppercase">
-            Count Down!!!
+            Count Down
           </h3>
           <div className="h-0.5 w-1/4 bg-primary" />
           <Fade>
@@ -171,7 +171,7 @@ export default function Page() {
                           <h2 className="text-lg lg:text-2xl font-normal font-cairo">
                             {timeline}
                           </h2>
-                          <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
+                          <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
                             {description}
                           </p>
                         </div>
@@ -204,7 +204,7 @@ export default function Page() {
                           <h2 className="text-lg lg:text-2xl font-normal font-cairo">
                             {timeline}
                           </h2>
-                          <p className="text-lg lg:text-2xl font-normal font-cairo text-primary">
+                          <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
                             {description}
                           </p>
                         </div>
@@ -391,23 +391,16 @@ export default function Page() {
             <div className="grid md:grid-cols-3 md:gap-20 gap-5 max-w-[1034px] place-items-center mx-auto mt-6">
               <Slide direction="left">
                 <SquadCard
-                  name="Philip"
-                  content="My friend, my brother Timy took a big bold decision to form a team, to be well complemented and helped to conquer and make more giant strides in life. Well done my guy.  
-             
-             As single brothers back then, we worked side by side in the ministry winning soul for the Lord zealously and eloquently. As my roommates, back then in the BQ, we lived peacefully, a glimpse of how peaceful we will enjoy living together in paradise. Nothing do you my guy.
-             
-             I was super excited when it became official that it was Jayy. Then I knew I had done a good job behind the scenes of warming the feets against it becoming cold feet at its early stages, reassured when doubts crippled in. Jayy was indeed a fitted companion. She is an 'A1' grade material. Don't ask me how I know. I just know, I know. 
-             Jayy and Timy are my people. They are both spiritual, articulated, educated, insightful and friendly. This was the right choice. Last Last We Go Dey Alright.
-             "
+                  name="ThankGod"
+                  content="It brings me great joy to celebrate the union of two truly amazing beings. The groom, Timothy, is a man of great character— thoughtful, reliable, and above all, trustworthy. And then there’s Janice, the bride, whose grace, warmth, and radiant spirit perfectly complement his steadiness. She is intelligent, composed, and an inspiration to everyone around her. Together, they are a perfect harmony of strength and tenderness. With all my heart, I wish you both a joyful and fulfilling married life."
                   gender="male"
-                  image={Philip}
+                  image={ThankGod}
                 />
               </Slide>
               <Slide direction="up">
                 <SquadCard
-                  name=" (Maid of Honour)"
-                  content="I was there when the JT_Lovestory began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person. (Thought it would always be me but, oh well..) 
-              Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
+                  name=" Dee"
+                  content="I was there when the JT love story began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person (thought it would always be me but, oh well..). Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
               Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.
               It’s Jayy and Tee forever!
               With love,
@@ -454,7 +447,7 @@ export default function Page() {
         >
           <div className="grid gap-5 text-center">
             <h1 className="font-lovers-quarrel font-light text-white text-7xl">
-              Order of Photography
+              Order of Photograph
             </h1>
             <p className="text-2xl font-cairo font-medium text-white">
               Be our guest on the Red Carpet

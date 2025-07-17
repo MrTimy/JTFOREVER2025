@@ -2,7 +2,7 @@ export default function WeddingAnnouncement() {
   return (
     <div className="bg-transparent border-4 border-white p-8 text-center text-white">
       <h1 className="font-lovers-quarrel lg:text-7xl text-5xl mb-2">
-        #TimyAndJayyEverAfter
+        #JayyAndTimyEverAfter
       </h1>
       <p className="my-6 lg:text-2xl text-lg font-normal">
         WE ARE GETTING MARRIED!

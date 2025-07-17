@@ -11,17 +11,17 @@ const faqs = [
    {
     question: "How does the Guest Photo Upload work?",
     answer:
-      "We know some of our guests have an eye for great shots — and we’d love to see the day through your lens! 📸 Whether it’s a sweet selfie, a moment with the couple, or a fun dance floor snap, your pictures are part of the memories we’ll cherish forever.You’ll be able to upload your photos easily on the website. All images will be saved securely in the cloud, so we (and you!) can access and relive the magic anytime.",
+      "We know some of our guests have an eye for great shots, we will love to see the day through your lens! Whether it’s a selfie, a moment with the couple, or a group picture, your pictures are part of the memories we will cherish forever. You’ll be able to upload your photos easily on the website. All images will be saved securely in the cloud, so everyone can access and relive the magic anytime.",
   },
   {
     question: "What should I wear? Is there a dress code?",
     answer:
-      "Formal – but comfy shoes encouraged! We want you to feel great and enjoy the celebration, so dress to impress, but also to dance!",
+      "Formal– but comfy shoes encouraged! We want you to feel great and enjoy the celebration, so dress to impress, but also to dance!",
   },
    {
     question: "Are they Hotels Near the Venue?",
     answer:
-      "1. Top Rank Hotel Galaxy – Offers comfortable rooms with free breakfast and Wi‑Fi, plus a pool, spa, and gym expedia.com toprankhotelgalaxyutako.com,    2. Chida International Hotel – its a 3.5-star business-class hotel featuring an outdoor pool, health club, free breakfast, and airport shuttle, 3. Yanna Apartments by Khaliques – Serviced apartments with kitchenettes, spa, pool, and complimentary breakfast—ideal for families or longer stay, 4. Sandralia Hotel – Upscale option with an outdoor pool, fitness centre, spa facilities, and poolside bars"
+      "1. Top Rank Hotel Galaxy (toprankhotelgalaxyutako.com) 2. Chida International Hotel (https://chidahotelinternational.com/) 3. Yanna Apartments by Khaliques (https://yannaapartments.com/)  4.Sandralia Hotel (https://sandraliahotel.com/)  5. ARPON Guest House (https://hotels.ng/hotel/997837-arpon-guest-house-abuja)"
   },
   {
     question: "What time should I arrive?",
@@ -31,22 +31,22 @@ const faqs = [
   {
     question: "Will the ceremony and reception be at the same location?",
     answer:
-      "No, they are in different locations — but they’re close by. Directions and details are listed in the event details.",
+      "No, they are in different locations, but they’re close. Directions and details are listed in the event details.",
   },
   {
     question: "What will the weather be like?",
     answer:
-      "It’s August in Nigeria — which means there’s a good chance of rain. 🌧️ While we’re hopeful for clear skies and sunshine, we recommend guests come prepared, just in case. Umbrellas, covered shoes, or an extra wrap might come in handy! However, Rain or shine, it’s going to be a beautiful day — and we can’t wait to celebrate it with you. ☀️🌧️💕",
+      "It’s August in Nigeria, which means there’s a good chance of rain🌧️. While we’re hopeful for clear skies and sunshine, we recommend guests come prepared, just in case. Umbrellas, covered shoes, or an extra wrap might come in handy! However, rain or shine, it’s going to be a beautiful day, and we can’t wait to celebrate it with you☀️🌧️💕.",
   },
   {
     question: "Is there parking available?",
     answer:
-      "Yes, There is plenty of free parking near the entrance of either Halls.",
+      "Yes, there is a large parking area near the entrance of either halls.",
   },
   {
     question: "Can I bring a plus-one?",
     answer:
-      "We’d love to celebrate with all our favorite people, but due to space constraints, we’re only able to accommodate the number of guests indicated on your Access card. Thanks for understanding!",
+      "We would love to celebrate with all our favorite people, but due to space constraints, we’re only able to accommodate the number of guests indicated on your Access card. Thanks for understanding! LAS LAS WE GO DEH ALRIGHT!!!",
   },
  
 ];

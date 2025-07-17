@@ -5,7 +5,7 @@ export default function Footer() {
         All Right Reserved
       </p>
       <p className="text-primary font-lovers-quarrel text-[44px]">
-        #TimyAndJayyEverAfter
+        #JayyAndTimyEverAfter
       </p>
     </div>
   );

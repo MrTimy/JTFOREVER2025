@@ -63,6 +63,7 @@ export { default as Praise } from "./images/Praise.jpg";
 export { default as Sharon } from "./images/Sharon Osuji.jpg";
 export { default as Sylviana } from "./images/Sylviana.jpg";
 export { default as Wemimo } from "./images/Wemimo.jpeg";
+export { default as Peace } from "./images/Peace.jpg";
 
 //groomsmen
 export { default as Philip } from "./images/CHIBUEZE.jpeg";
@@ -71,3 +72,6 @@ export { default as Jonathan } from "./images/Jonathan.jpeg";
 export { default as Nnamdi } from "./images/Nnamdi.jpeg";
 export { default as Obed } from "./images/Obed.jpeg";
 export { default as Samcusta } from "./images/Samcusta.jpeg";
+export { default as ThankGod } from "./images/ThankGod.jpeg";
+export { default as Bright } from "./images/Bright.jpg";
+export { default as Bethel } from "./images/Bethel.jpg";
