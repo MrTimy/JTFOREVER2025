@@ -400,8 +400,7 @@ export default function Page() {
               <Slide direction="up">
                 <SquadCard
                   name=" Dee"
-                  content="I was there when the JT love story began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person (thought it would always be me but, oh well..). Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. 
-              Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.
+                  content="I was there when the JT love story began. I watched it grow from “getting to know you” to “can’t go a day without speaking to you,” and now to, “let’s do this forever.” I couldn't be happier that you, my dearest Ada, found your person (thought it would always be me but, oh well..). Just like the sun was made to shine and the stars were made to light the sky, you were made for each other. I wish you both the most beautiful life together. Here’s to a bond built on friendship, driven by true love, and sealed by Jehovah.
               It’s Jayy and Tee forever!
               With love,
               Nwa."
