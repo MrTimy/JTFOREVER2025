@@ -9,14 +9,14 @@ export { default as FirstMeet } from "./images/firstmeet.jpg";
 export { default as FirstDate } from "./images/firstdate.jpg";
 export { default as Growingtogether } from "./images/growingtogether.jpg";
 export { default as Engagement } from "./images/engagement.jpg";
-export { default as WeddingImage1 } from "./images/3.2.jpg";
+export { default as WeddingImage1 } from "./images/3two.jpeg";
 export { default as WeddingImage2 } from "./images/TuxSitting.jpeg";
-export { default as WeddingImage3 } from "./images/3.3.jpg";
+export { default as WeddingImage3 } from "./images/4.jpg";
 export { default as WeddingImage4 } from "./images/TuxElegant.jpeg";
 export { default as WeddingImage5 } from "./images/bd5c98e9ee13c5fb52d6b56c61b0e8fa6f465958.png";
 export { default as WeddingImage6 } from "./images/1.jpg";
 export { default as WeddingImage7 } from "./images/Tuxlooking.jpg";
-export { default as WeddingImage8 } from "./images/4.jpg";
+export { default as WeddingImage8 } from "./images/3three.jpeg";
 export { default as WeddingImage9 } from "./images/jay5.jpg";
 
 export { default as WeddingImage10 } from "./images/3js Hotel.jpg";
