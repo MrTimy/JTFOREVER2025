@@ -36,13 +36,21 @@ export default function Page() {
           <p className="text-chocolate-brown text-sm md:text-2xl font-cairo max-w-[465px]">
             Should you wish to send a cash gift, here are our account details:
           </p>
-          <div className="grid gap-2 text-base md:text-2xl font-normal text-chocolate-brown">
+          <div className="grid gap-2 text-base text-sm font-normal text-chocolate-brown">
             <p className="font-light">Account Name:</p>
             <p className="font-bold">Timothy Eke</p>
             <p className="font-light">Account Name:</p>
             <p className="font-bold">0719066706</p>
             <p className="font-light">Bank Name:</p>
             <p className="font-bold"> Access Bank</p>
+          </div> <br />
+          <div className="grid gap-2 text-base text-sm font-normal text-chocolate-brown">
+            <p className="font-light">Account Name:</p>
+            <p className="font-bold">Ezeafuluke Janice </p>
+            <p className="font-light">Account Name:</p>
+            <p className="font-bold">1007392203</p>
+            <p className="font-light">Bank Name:</p>
+            <p className="font-bold"> FCMB Bank</p>
           </div>
         </div>
         <div className="bg-white min-h-[495px] grid gap-4 place-items-center text-center p-8 rounded-3xl font-cairo z-30">
