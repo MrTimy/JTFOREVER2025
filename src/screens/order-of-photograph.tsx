@@ -45,7 +45,7 @@ export default function Page() {
               </ul>
               <p className="font-bold text-xl mt-8">Couple with:</p>
               <ul className="text-xl grid gap-1">
-                <li> BestMan & Maid of Honour</li>
+                <li> Best man & Maid of Honour</li>
                 <li> Bridesmaids</li>
                 <li> Groomsmen</li>
                 <li> Officiating Minister</li>
