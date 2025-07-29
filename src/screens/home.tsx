@@ -8,7 +8,7 @@ import {
   FirstMeet,
   Rule,
   FirstDate,
-  MarriageProposal,
+  Growingtogether,
   Engagement,
   StoryFlowerOne,
   StoryFlowerTwo,
@@ -68,8 +68,8 @@ const loveStory: {
     title: "Growing Together",
     timeline: "",
     description:
-      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. Janice: Timothy was really present- he encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. When we finally reunited in school and had our first official date, everything fell in place. ",
-    img: MarriageProposal,
+      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. Janice: Timothy was really present. He encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. When we finally reunited in school and had our first official date, everything fell in place. ",
+    img: Growingtogether,
     position: "left",
   },
   {

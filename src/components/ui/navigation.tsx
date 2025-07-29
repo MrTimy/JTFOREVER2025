@@ -42,7 +42,8 @@ export default function Navigation() {
       {/* Mobile Navigation Button */}
       <div className="lg:hidden flex justify-between items-center px-4 py-2">
         <p className="text-primary font-lovers-quarrel text-3xl">
-          #JayyAndTimyEverAfter
+          #JayyAndTimy
+          EverAfter
         </p>
         <button
           onClick={toggleMenu}

@@ -10,7 +10,7 @@ export const EventDetails = [
     title: "The Wedding Ceremony",
     desc: "This is the moment we’ve waited for, where promises are made and hearts become one. Surrounded by the people who matter most, we’ll say “I do” and step into forever. Come witness the start of our beautiful journey.",
     date: "Saturday 30th August, 2025",
-    venue: "Kingdom Hall Of Jehovah's Wtinesses, Plot C12, 512 Road, Gwarimpa, Abuja.",
+    venue: "3J's Hotel and Apartments, 31 P.O.W, Mafemi Crescent, Utako, Abuja.",
     wear: "12PM ",
   },
   {
