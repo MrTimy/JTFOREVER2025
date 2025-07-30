@@ -3,7 +3,7 @@ import Button from "../components/button";
 export default function Page() {
   return (
     <div className="mx-auto max-w-web-max w-mobile-max py-12">
-      <div className="grid gap-6 font-cairo max-w-[1300px] text-2xl">
+      <div className="grid gap-4 font-cairo max-w-[1300px] text-2xl">
         <p>
           Your presence at our wedding is the most precious gift we could ask
           for, and we are so grateful for your love and support as we begin this
@@ -46,11 +46,11 @@ export default function Page() {
           </div> <br />
           <div className="grid gap-2 text-base text-sm font-normal text-chocolate-brown">
             <p className="font-light">Account Name:</p>
-            <p className="font-bold">Ezeafuluke Janice </p>
+            <p className="font-bold">Ezeafulukwe Janice </p>
             <p className="font-light">Account Name:</p>
             <p className="font-bold">1007392203</p>
             <p className="font-light">Bank Name:</p>
-            <p className="font-bold"> FCMB Bank</p>
+            <p className="font-bold"> FCMB</p>
           </div>
         </div>
         <div className="bg-white min-h-[495px] grid gap-4 place-items-center text-center p-8 rounded-3xl font-cairo z-30">

@@ -60,6 +60,7 @@ export default function Page() {
                 <li>Groom's Friends</li>
                 <li> Lifecamp Congregation</li>
                 <li>Gateway Congregation</li>
+                <li>Other Witness Friends</li>
                 <li>Groom's Colleagues</li>
                 <li>Bride's Colleagues</li>
                 <li>Friends from UNN</li>
