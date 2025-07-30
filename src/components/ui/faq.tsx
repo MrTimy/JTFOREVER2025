@@ -19,7 +19,7 @@ const faqs = [
       "Formal– but comfy shoes encouraged! We want you to feel great and enjoy the celebration, so dress to impress, but also to dance!",
   },
    {
-    question: "Are there Hotels near the Venue?",
+    question: "Are there Hotels near the venue?",
     answer:
       "1. Top Rank Hotel Galaxy (toprankhotelgalaxyutako.com) 2. Chida International Hotel (https://chidahotelinternational.com/) 3. Yanna Apartments by Khaliques (https://yannaapartments.com/)  4.Sandralia Hotel (https://sandraliahotel.com/)  5. ARPON Guest House (https://hotels.ng/hotel/997837-arpon-guest-house-abuja)"
   },

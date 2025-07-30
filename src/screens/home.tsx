@@ -21,7 +21,6 @@ import {
   WeddingImage7,
   WeddingImage8,
   WeddingImage9,
-  WeddingImage10,
   WeddingImage11,
   LeftFlower,
   RightFlower,
@@ -31,7 +30,7 @@ import {
   Ifeanyi,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
-import { EventDetails } from "../constants/constant";
+import { eventDetails } from "../constants/constant";
 import Button from "../components/button";
 import FAQ from "../components/ui/faq";
 import CurvedGallery from "../components/ui/curvedgallery";
@@ -40,6 +39,8 @@ import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { ORDER_OF_EVENTS, ORDEROFPHOTOGRAPH } from "../routes";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import "photoswipe/dist/photoswipe.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
 const loveStory: {
   title: string;
@@ -90,7 +91,7 @@ export default function Page() {
         modules={[Navigation, Autoplay]}
         className="h-[600px]"
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         loop
@@ -231,86 +232,190 @@ export default function Page() {
         </div>
 
         {/* Gallery */}
-        <div className="mx-auto pt-32 grid gap-10" id="our-gallery">
+        <div className="mx-auto pt-32 grid gap-10">
           {" "}
-          <h1 className="text-7xl text-center font-normal font-lovers-quarrel">
+          <h1
+            className="text-7xl text-center font-normal font-lovers-quarrel"
+            id="our-gallery"
+          >
             Our Gallery
           </h1>
-          <Zoom>
-            <div className="mx-auto grid max-w-[1200px] bg-white p-2">
-              <div className="grid grid-cols-12 gap-2">
-                {/* Top row */}
-                <div className="col-span-4">
-                  <img
-                    src={WeddingImage1}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-5">
-                  <img
-                    src={WeddingImage2}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-3">
-                  <img
-                    src={WeddingImage3}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+          <Zoom triggerOnce>
+            <Gallery>
+              <div className="mx-auto grid max-w-[1200px] bg-white p-2">
+                <div className="grid grid-cols-12 gap-2">
+                  {/* Top row */}
+                  <div className="col-span-4">
+                    <Item
+                      original={WeddingImage1}
+                      thumbnail={WeddingImage1}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage1}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
+                  <div className="col-span-5">
+                    <Item
+                      original={WeddingImage2}
+                      thumbnail={WeddingImage2}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage2}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
+                  <div className="col-span-3">
+                    <Item
+                      original={WeddingImage3}
+                      thumbnail={WeddingImage3}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage3}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
 
-                {/* Middle row */}
-                <div className="col-span-4 row-span-2">
-                  <img
-                    src={WeddingImage4}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-3">
-                  <img
-                    src={WeddingImage5}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-5 row-span-2">
-                  <img
-                    src={WeddingImage6}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                  {/* Middle row */}
+                  <div className="col-span-4 row-span-2">
+                    <Item
+                      original={WeddingImage4}
+                      thumbnail={WeddingImage4}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage4}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
+                  <div className="col-span-3">
+                    <Item
+                      original={WeddingImage5}
+                      thumbnail={WeddingImage5}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage5}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
+                  <div className="col-span-5 row-span-2">
+                    <Item
+                      original={WeddingImage6}
+                      thumbnail={WeddingImage6}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage6}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
 
-                {/* Lower middle */}
-                <div className="col-span-3 row-span-2">
-                  <img
-                    src={WeddingImage7}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                  {/* Lower middle */}
+                  <div className="col-span-3 row-span-2">
+                    <Item
+                      original={WeddingImage7}
+                      thumbnail={WeddingImage7}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage7}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
 
-                {/* Bottom row */}
-                <div className="col-span-4">
-                  <img
-                    src={WeddingImage8}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-5">
-                  <img
-                    src={WeddingImage9}
-                    alt="wedding"
-                    className="w-full h-full object-cover"
-                  />
+                  {/* Bottom row */}
+                  <div className="col-span-4">
+                    <Item
+                      original={WeddingImage8}
+                      thumbnail={WeddingImage8}
+                      width="700"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage8}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
+                  <div className="col-span-5">
+                    <Item
+                      original={WeddingImage9}
+                      thumbnail={WeddingImage9}
+                      width="900"
+                      height="768"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          src={WeddingImage9}
+                          alt="wedding"
+                          className="w-full h-full object-cover"
+                          ref={ref}
+                          onClick={open}
+                        />
+                      )}
+                    </Item>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Gallery>
           </Zoom>
         </div>
 
@@ -320,35 +425,41 @@ export default function Page() {
             Event Details
           </h1>
           <div className="grid md:grid-cols-3 gap-5">
-            {EventDetails.map(({ title, desc, date, venue, wear }, idx) => (
-              <div
-                className="border border-burnt-orange p-3 grid gap-8"
-                key={idx}
-              >
-                <img src={WeddingImage10} alt="" />
-                <h1 className="text-6xl font-lovers-quarrel">{title}</h1>
-                <p className="text-xl font-normal font-cairo text-primary">
-                  {desc}
-                </p>
-                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
-                  {date}
-                </p>
-                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
-                  {venue}
-                </p>
-                <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
-                  {wear}
-                </p>
-                <a
-                  href="https://www.google.com/maps/place/3J's+Hotels+%26+Apartments/@9.0735252,7.434917,17z/data=!4m10!3m9!1s0x104e750fcb20c143:0xedd8b612f838b8a4!5m3!1s2025-07-01!4m1!1i2!8m2!3d9.0735252!4d7.434917!16s%2Fg%2F11hdvkv4_5?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-burnt-orange w-full text-white p-2.5 h-14 flex items-center justify-center font-cairo font-semibold rounded-lg"
+            {eventDetails.map(
+              ({ title, desc, date, venue, wear, image }, idx) => (
+                <div
+                  className="border border-burnt-orange p-3 grid gap-8"
+                  key={idx}
                 >
-                  MAP DIRECTIONS
-                </a>
-              </div>
-            ))}
+                  <img
+                    src={image}
+                    alt=""
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <h1 className="text-6xl font-lovers-quarrel">{title}</h1>
+                  <p className="text-xl font-normal font-cairo text-primary">
+                    {desc}
+                  </p>
+                  <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                    {date}
+                  </p>
+                  <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                    {venue}
+                  </p>
+                  <p className="text-xl font-semibold text-[rgba(0, 0, 0, 0.2)] font-cairo">
+                    {wear}
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/place/3J's+Hotels+%26+Apartments/@9.0735252,7.434917,17z/data=!4m10!3m9!1s0x104e750fcb20c143:0xedd8b612f838b8a4!5m3!1s2025-07-01!4m1!1i2!8m2!3d9.0735252!4d7.434917!16s%2Fg%2F11hdvkv4_5?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-burnt-orange w-full text-white p-2.5 h-14 flex items-center justify-center font-cairo font-semibold rounded-lg"
+                  >
+                    MAP DIRECTIONS
+                  </a>
+                </div>
+              )
+            )}
           </div>
         </div>
 

@@ -16,23 +16,15 @@ export { default as WeddingImage4 } from "./images/TuxElegant.jpeg";
 export { default as WeddingImage5 } from "./images/bd5c98e9ee13c5fb52d6b56c61b0e8fa6f465958.png";
 export { default as WeddingImage6 } from "./images/1.jpg";
 export { default as WeddingImage7 } from "./images/Tuxlooking.jpg";
-export { default as WeddingImage8 } from "./images/3three.jpeg";
+export { default as WeddingImage8 } from "./images/GreenElegant.jpeg";
 export { default as WeddingImage9 } from "./images/jay5.jpg";
 
-export { default as WeddingImage10 } from "./images/3js Hotel.jpg";
 export { default as WeddingImage11 } from "./images/Frame 427318227.png";
 
 export { default as WeddingImage13 } from "./images/wedding13.png";
 export { default as LeftFlower } from "./svgs/left_flower.svg";
 export { default as RightFlower } from "./svgs/right_flower.svg";
 
-export { default as BridesMaid1 } from "./images/maid1.png";
-export { default as BridesMaid2 } from "./images/maid2.png";
-export { default as BridesMaid3 } from "./images/maid3.png";
-
-export { default as Groom1 } from "./images/groom1.png";
-export { default as Groom2 } from "./images/groom2.png";
-export { default as Groom3 } from "./images/groom3.png";
 
 export { default as BowlTie } from "./svgs/bowltie.svg";
 export { default as Gradient } from "./images/Frame 427318263.png";

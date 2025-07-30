@@ -10,11 +10,11 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "Our Love Story", path: "#our-love-story" },
     { name: "Gallery", path: "#our-gallery" },
-    { name: "Event Details", path: "/order-of-events" },
+    { name: "Our Program", path: "/order-of-events" },
     { name: "RSVP", path: "/rsvp" },
     { name: "The Squad", path: "/squad" },
     { name: "Gift Registry", path: "/gift-registry" },
-    { name: "UPLOAD", path: "/guest-gallery" },
+    { name: "Upload", path: "/guest-gallery" },
   ];
 
   const toggleMenu = () => {
@@ -25,13 +25,13 @@ export default function Navigation() {
       <div className="max-w-web-max mx-auto w-mobile-max py-4 px-3 hidden lg:flex justify-between items-center">
         <div className="flex items-center gap-4">
           {links.map(({ name, path }, idx) => (
-            <Link
-              to={path}
+            <a
+              href={path}
               key={idx}
-              className="text-base font-cairo font-normal"
+              className="text-base font-cairo font-normal cursor-pointer"
             >
               {name}
-            </Link>
+            </a>
           ))}
         </div>
         <Link to="/rsvp">
@@ -42,8 +42,7 @@ export default function Navigation() {
       {/* Mobile Navigation Button */}
       <div className="lg:hidden flex justify-between items-center px-4 py-2">
         <p className="text-primary font-lovers-quarrel text-3xl">
-          #JayyAndTimy
-          EverAfter
+          #JayyAndTimy EverAfter
         </p>
         <button
           onClick={toggleMenu}
@@ -85,14 +84,14 @@ export default function Navigation() {
           </div>
           <div className="px-4 py-2 space-y-3">
             {links.map(({ name, path }, idx) => (
-              <Link
-                to={path}
+              <a
+                href={path}
                 key={idx}
-                className="block py-2 text-base font-cairo font-normal text-gray-700 hover:text-gray-900 border-b border-gray-100"
+                className="block py-2 text-base font-cairo font-normal text-gray-700 hover:text-gray-900 border-b border-gray-100 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {name}
-              </Link>
+              </a>
             ))}
             <div className="py-4 w-full">
               <Link to="/rsvp">
