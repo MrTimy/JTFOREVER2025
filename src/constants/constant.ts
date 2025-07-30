@@ -5,20 +5,28 @@ export const EventDetails = [
     date: "Friday 29th August, 2025",
     venue: "------------",
     wear: "8pm",
+    image:
+      "https://i.pinimg.com/1200x/98/66/a5/9866a541f58494766a49f222e531c94d.jpg",
   },
   {
     title: "The Wedding Ceremony",
     desc: "This is the moment we’ve waited for, where promises are made and hearts become one. Surrounded by the people who matter most, we’ll say “I do” and step into forever. Come witness the start of our beautiful journey.",
     date: "Saturday 30th August, 2025",
-    venue: "3J's Hotel and Apartments, 31 P.O.W, Mafemi Crescent, Utako, Abuja.",
+    venue:
+      "3J's Hotel and Apartments, 31 P.O.W, Mafemi Crescent, Utako, Abuja.",
     wear: "12PM ",
+    image:
+      "https://i.pinimg.com/1200x/b9/f4/a2/b9f4a26083f1072e40add25d7dcab559.jpg",
   },
   {
     title: "The Reception",
     desc: "Now the real party begins! Good food, great music, and unforgettable memories await. Come ready to celebrate, dance, and let loose with us- because love is sweet, and this celebration will be even sweeter!",
     date: "Saturday 30th August, 2025",
-    venue: "3J's Hotel and Apartments, 31 P.O.W, Mafemi Crescent, Utako, Abuja.",
+    venue:
+      "3J's Hotel and Apartments, 31 P.O.W, Mafemi Crescent, Utako, Abuja.",
     wear: "2PM ",
+    image:
+      "https://i.pinimg.com/736x/da/ae/63/daae63d01afcd1a8042ae68983439431.jpg",
   },
 ];
 
