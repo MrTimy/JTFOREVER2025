@@ -1,4 +1,4 @@
-export const EventDetails = [
+export const eventDetails = [
   {
     title: "The Family Dinner",
     desc: "Before the big celebration, we’re setting aside a special evening just for our families, a quiet, heartfelt gathering where two families become one. It’s a moment to laugh, bond, and share stories as we prepare to walk down the aisle.",

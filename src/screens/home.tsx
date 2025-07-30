@@ -30,7 +30,7 @@ import {
   Ifeanyi,
 } from "../assets";
 import { CountdownTimer, WeddingAnnouncement } from "../components";
-import { EventDetails } from "../constants/constant";
+import { eventDetails } from "../constants/constant";
 import Button from "../components/button";
 import FAQ from "../components/ui/faq";
 import CurvedGallery from "../components/ui/curvedgallery";
@@ -425,7 +425,7 @@ export default function Page() {
             Event Details
           </h1>
           <div className="grid md:grid-cols-3 gap-5">
-            {EventDetails.map(
+            {eventDetails.map(
               ({ title, desc, date, venue, wear, image }, idx) => (
                 <div
                   className="border border-burnt-orange p-3 grid gap-8"
