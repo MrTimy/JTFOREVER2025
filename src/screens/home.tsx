@@ -38,14 +38,14 @@ import SquadCard from "../components/squad-card";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { ORDER_OF_EVENTS, ORDEROFPHOTOGRAPH } from "../routes";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import "photoswipe/dist/photoswipe.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const loveStory: {
   title: string;
   timeline: string;
-  description: string;
+  description: string | string[];
   img: string;
   position?: "left" | "right";
 }[] = [
@@ -68,16 +68,21 @@ const loveStory: {
   {
     title: "Growing Together",
     timeline: "",
-    description:
-      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. Janice: Timothy was really present. He encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. When we finally reunited in school and had our first official date, everything fell in place. ",
+    description: [
+      "Timothy: The pandemic changed many things, but for us, it brought us closer. With more time at home, our conversations became more frequent, more intentional, and much sweeter. We talked about everything, family, goals, experiences at the ministry, articles we enjoyed reading, plans for the future, we would talk for hours. But what really brought us closer was when she lost her dad. ",
+      "Janice: Timothy was really present. He encouraged me, prayed with me, I never felt alone. I think that was when we both realized what started as a friendship had blossomed into something beautiful. We both wanted partners that loved Jehovah and it just seemed right at the time. Although we were miles apart, we were closer than ever. Daily calls, endless chats, laughter, support, we were growing fast. When we finally reunited in school and had our first official date, everything fell in place. ",
+    ],
     img: Growingtogether,
     position: "left",
   },
   {
     title: "The Perfect Proposal",
     timeline: "",
-    description:
-      "Janice: Definitely, it was not always a smooth ride, we had our ups and downs but we were in this fully, deeply. But through every twist and turn, one thing stayed consistent, we wanted each other other as partners and we kept growing together.               Timothy: And the proposal? Oh, she didn’t see it coming. It was everything we had hoped for calm, beautifully planned, and truly us. From that unforgettable moment to our engagement party with our friends, every step has brought us closer to our marriage. This is not just a new chapter, but a continuation of our beautiful journey, now, under the same roof, side by side, forever.",
+    description: [
+      "Janice: Definitely, it was not always a smooth ride, we had our ups and downs but we were in this fully, deeply. But through every twist and turn, one thing stayed consistent, we wanted each other other as partners and we kept growing together.  ",
+      "Timothy: And the proposal? Oh, she didn’t see it coming. It was everything we had hoped for calm, beautifully planned, and truly us. From that unforgettable moment to our engagement party with our friends, every step has brought us closer to our marriage. This is not just a new chapter, but a continuation of our beautiful journey, now, under the same roof, side by side, forever.",
+    ],
+
     img: Engagement,
     position: "right",
   },
@@ -172,9 +177,20 @@ export default function Page() {
                           <h2 className="text-lg lg:text-2xl font-normal font-cairo">
                             {timeline}
                           </h2>
-                          <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
-                            {description}
-                          </p>
+                          {Array.isArray(description) ? (
+                            description.map((line, i) => (
+                              <p
+                                key={i}
+                                className="text-lg lg:text-1xl font-normal font-cairo text-primary mb-4"
+                              >
+                                {line}
+                              </p>
+                            ))
+                          ) : (
+                            <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
+                              {description}
+                            </p>
+                          )}
                         </div>
                         <div className="border border-[#868686] rounded-full p-2">
                           <img
@@ -205,9 +221,20 @@ export default function Page() {
                           <h2 className="text-lg lg:text-2xl font-normal font-cairo">
                             {timeline}
                           </h2>
-                          <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
-                            {description}
-                          </p>
+                          {Array.isArray(description) ? (
+                            description.map((line, i) => (
+                              <p
+                                key={i}
+                                className="text-lg lg:text-1xl font-normal font-cairo text-primary mb-4"
+                              >
+                                {line}
+                              </p>
+                            ))
+                          ) : (
+                            <p className="text-lg lg:text-1xl font-normal font-cairo text-primary">
+                              {description}
+                            </p>
+                          )}
                         </div>
                       </div>
                     </Slide>
@@ -240,8 +267,8 @@ export default function Page() {
           >
             Our Gallery
           </h1>
-          <Zoom triggerOnce>
-            <Gallery>
+          <Gallery>
+            <Fade>
               <div className="mx-auto grid max-w-[1200px] bg-white p-2">
                 <div className="grid grid-cols-12 gap-2">
                   {/* Top row */}
@@ -415,8 +442,8 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-            </Gallery>
-          </Zoom>
+            </Fade>
+          </Gallery>
         </div>
 
         {/* Event Details */}
