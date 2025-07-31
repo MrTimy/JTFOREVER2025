@@ -39,11 +39,11 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-10">
             <div className="grid gap-2 text-base font-normal text-chocolate-brown">
               <p className="font-light">Account Name:</p>
-              <p className="font-bold">Timothy Eke</p>
+              <p className="font-bold">Piggyvest/Eke Timothy</p>
               <p className="font-light">Account Name:</p>
-              <p className="font-bold">0719066706</p>
+              <p className="font-bold">9871824323</p>
               <p className="font-light">Bank Name:</p>
-              <p className="font-bold"> Access Bank</p>
+              <p className="font-bold"> Paystack Titan</p>
             </div>{" "}
             <div className="grid gap-2  text-base font-normal text-chocolate-brown">
               <p className="font-light">Account Name:</p>

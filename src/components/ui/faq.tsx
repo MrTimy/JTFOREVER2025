@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Will the ceremony and reception be at the same location?",
     answer:
-      "No, they are in different locations, but they’re close. Directions and details are listed in the event details.",
+      "Yes, both the ceremony and reception will take place at the same location. No need to transport, just relax and celebrate with us all in one beautiful setting!",
   },
   {
     question: "What will the weather be like?",

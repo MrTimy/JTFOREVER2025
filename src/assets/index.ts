@@ -61,7 +61,6 @@ export { default as Peace } from "./images/Peace.jpg";
 export { default as Philip } from "./images/CHIBUEZE.jpeg";
 export { default as Ifeanyi } from "./images/ifeanyi.jpeg";
 export { default as Jonathan } from "./images/Jonathan.jpg";
-export { default as Nnamdi } from "./images/Nnamdi.jpeg";
 export { default as Obed } from "./images/Obed.jpeg";
 export { default as Samcusta } from "./images/Samcusta.jpeg";
 export { default as ThankGod } from "./images/ThankGod.jpeg";
