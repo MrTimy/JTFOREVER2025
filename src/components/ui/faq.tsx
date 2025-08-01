@@ -38,6 +38,11 @@ const faqs = [
     answer:
       "It’s August in Nigeria, which means there’s a good chance of rain🌧️. While we’re hopeful for clear skies and sunshine, we recommend guests come prepared, just in case. Umbrellas, covered shoes, or an extra wrap might come in handy! However, rain or shine, it’s going to be a beautiful day, and we can’t wait to celebrate it with you☀️🌧️💕.",
   },
+   {
+    question: "Will money be sprayed in the wedding reception?",
+    answer:
+      "No, money spraying will not be part of our wedding celebration. We've chosen to keep the event modest and focused on the joy of being together. We truly appreciate all your love and support! If you’d like to explore meaningful ways to support us, please feel free to visit the Gift Registry section on our website.",
+  },
   {
     question: "Is there parking available?",
     answer:

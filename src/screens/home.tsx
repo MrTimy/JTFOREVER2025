@@ -53,7 +53,7 @@ const loveStory: {
     title: "Our First Meet",
     timeline: "",
     description:
-      "Janice: We were in the same congregation while in school. We knew each other, though from a distance. Our first picture together was after a Memorial observance- no butterflies, no sparks, just two people who loved Jehovah and shared mutual friends. Sometimes, we would walk together in the ministry. It was in one of those moments we found out Timothy shared the same names and initials as my dad, we had meaningful conversations that subtly planted the seeds of something deeper, neither of us knew it yet.",
+      "Janice: We were in the same congregation while in school. We knew each other, though from a distance. Our first picture together was after a Memorial observance- no butterflies, no sparks, just two people who love Jehovah and shared mutual friends. Sometimes, we would work together in the ministry. It was in one of those moments we found out Timothy shared the same names and initials as my dad, we had meaningful conversations that subtly planted the seeds of something deeper, neither of us knew it yet.",
     img: FirstMeet,
     position: "left",
   },
