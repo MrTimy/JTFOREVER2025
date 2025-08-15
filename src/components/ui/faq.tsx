@@ -6,7 +6,12 @@ const faqs = [
    {
     question: "Are kids welcome?",
     answer:
-      "As much as we love your little ones, we will not be including them in the ceremony or reception. However, we recognize that some of you will be traveling with your kids, so please know they are welcome at the Friday cocktail reception and Sunday brunch!",
+      "As much as we love your little ones, we will not be including them in the ceremony or reception to help us manage space and catering. We truly appreciate your understanding and can’t wait to celebrate with you!",
+  },
+  {
+    question: "Do I need an Access Card to attend?",
+    answer:
+      "Absolutely, each access card has a unique code that will be scanned at the entry point.",
   },
    {
     question: "How does the Guest Photo Upload work?",
