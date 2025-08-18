@@ -10,7 +10,7 @@ export { default as FirstDate } from "./images/firstdate.jpg";
 export { default as Growingtogether } from "./images/growingtogether.jpg";
 export { default as Engagement } from "./images/engagement.jpg";
 export { default as WeddingImage1 } from "./images/3two.jpeg";
-export { default as WeddingImage2 } from "./images/TuxSitting.jpeg";
+export { default as WeddingImage2 } from "./images//TuxSitting.jpeg";
 export { default as WeddingImage3 } from "./images/4.jpg";
 export { default as WeddingImage4 } from "./images/TuxElegant.jpeg";
 export { default as WeddingImage5 } from "./images/bd5c98e9ee13c5fb52d6b56c61b0e8fa6f465958.png";
@@ -32,7 +32,7 @@ export { default as Gradient } from "./images/Frame 427318263.png";
 export { default as GroupGallery } from "./images/groupgallery.png";
 export { default as BridesmaidIcon } from "./svgs/female.svg";
 export { default as GroomIcon } from "./svgs/male.svg";
-export { default as Sample } from "./images/sample.png";
+// export { default as Sample } from "./images/sample.png";
 
 export { default as OrderOfPhotoBackground } from "./images/orderofphotobg.png";
 export { default as OrderOfPhotoBox } from "./images/orderofphotos.png";
